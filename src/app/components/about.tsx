@@ -27,11 +27,11 @@ const About: React.FC = () => {
             Hello! I&apos;m Areeba, a student of Generative AI and a passionate Frontend Developer who loves crafting beautiful and functional web applications. With a solid foundation in HTML, CSS, and JavaScript, I enjoy turning complex problems into simple and intuitive designs. My journey in web development started with curiosity, and over time, it will transform into a successful career.
           </p>
           <p className="mt-4 text-gray-400 mx-4 md:mx-8">
-          I am currently learning Next.js and Tailwind CSS to further enhance my web development skills. I enjoy working with modern technologies and preparing myself for new challenges. I am striving to improve the learning process through my experiences, so that I can create modern and efficient web applications. My desire is to provide creative solutions by practically applying my skills that enhance user experiences.
+            I am currently learning Next.js and Tailwind CSS to further enhance my web development skills. I enjoy working with modern technologies and preparing myself for new challenges. I am striving to improve the learning process through my experiences so that I can create modern and efficient web applications. My desire is to provide creative solutions by practically applying my skills that enhance user experiences.
           </p>
           <p className="mt-4 text-gray-400 mx-4 md:mx-8">
-          "Looking for a Frontend Developer? Let's connect on LinkedIn!"
-         </p>
+            Looking for a Frontend Developer? Let&apos;s connect on LinkedIn!
+          </p>
           <DecorativeDots />
         </div>
 
