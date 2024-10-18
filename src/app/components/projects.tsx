@@ -21,6 +21,7 @@ interface Project {
   description: string;
   language: string;
   image: string;
+  
   githubUrl: string;
   liveUrl: string;
 }

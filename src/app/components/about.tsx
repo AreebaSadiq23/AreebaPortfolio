@@ -42,7 +42,7 @@ const About: React.FC = () => {
               height={200}
             />
             <Image
-              src="/Css.png"
+              src="/css.png"
               alt="CSS Skill"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
               width={200}
