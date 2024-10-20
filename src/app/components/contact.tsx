@@ -20,9 +20,9 @@ const DecorativeDots: React.FC = () => {
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="bg-gray-900 py-12">
-      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
-        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 justify-center mt-16">
+        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 justify-center mt-16 md:mt-0">
           <div className="info text-gray-400">
             <p className="mb-6 flex items-center">
               <span className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-xl mr-3">
@@ -53,8 +53,8 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-teal-600 text-center">
+        <div className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600 text-center">
             Get in Touch
           </h2>
           <form>

@@ -46,10 +46,10 @@ const HomeSection: React.FC = () => {
         className="flex flex-col md:flex-row items-center justify-center h-screen bg-gray-900 p-4 md:p-6"
       >
         <div className="w-full md:w-1/2 p-4 flex flex-col items-center md:items-start text-center md:text-left space-y-4 relative z-10 md:ml-24 mt-16 md:mt-0">
-          <h2 className="text-base md:text-3xl lg:text-4xl text-white animate-fadeIn">
+          <h2 className="text-lg md:text-3xl lg:text-4xl text-white animate-fadeIn">
             Frontend Developer
           </h2>
-          <h1 className="text-xl md:text-5xl lg:text-7xl text-slate-400 font-bold animate-fadeIn animate-delay-200">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-400 font-bold animate-fadeIn animate-delay-200">
             Hi I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>
           </h1>
           <p className="text-sm md:text-lg lg:text-2xl max-w-xs md:max-w-md text-gray-50 font-mono animate-fadeIn animate-delay-400">

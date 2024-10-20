@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
+
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
