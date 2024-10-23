@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="bg-gray-900 py-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
-        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 justify-center mt-16 md:mt-0">
+        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center">
           <div className="info text-gray-400">
             <p className="mb-6 flex items-center">
               <span className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-xl mr-3">
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                   name="firstName"
                   placeholder="Your First Name"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray"
+                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
               <div className="flex-1">
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                   name="lastName"
                   placeholder="Your Last Name"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray"
+                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                 name="email"
                 placeholder="Your Email"
                 required
-                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray"
+                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               />
             </div>
             <div className="form-group mb-4">
@@ -98,12 +98,12 @@ const Contact: React.FC = () => {
                 rows={4}
                 placeholder="Your Message"
                 required
-                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray"
+                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-light-gray transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               />
             </div>
             <button
               type="submit"
-              className="bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center mx-auto hover:bg-cyan-500 transition duration-300"
+              className="bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center mx-auto hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:shadow-lg"
             >
               <AiOutlineArrowUp size={20} className="mr-2" />
               <span>Send Message</span>
