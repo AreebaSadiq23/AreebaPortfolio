@@ -31,7 +31,7 @@ const projects: Project[] = [
     id: 1,
     name: "Roamstay-website",
     description:
-      "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
+    "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
     language: "HTML, CSS and JavaScript",
     image: "/project1.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
@@ -39,53 +39,55 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    name: "Education-Website",
+    description:
+    "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
+    language: "Nextjs and TailwindCSS",
+    image: "/project2.jpg",
+    githubUrl: "https://github.com/AreebaSadiq23/nextjs-project-educa-web.git",
+    liveUrl: "https://education-website-brown.vercel.app/",
+  },
+  {
+    id: 3,
     name: "Amazon-Clone",
     description:
       "This is an Amazon clone-website built using HTML, CSS, and JavaScript.",
     language: "HTML, CSS and JavaScript",
-    image: "/project2.jpg",
+    image: "/project3.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Amazon-web-clone.git",
     liveUrl: "https://amazon-web-clone-five.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "E-Commerce-Website",
     description:
       "This is an E-Commerce website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Next.js and Tailwind CSS",
-    image: "/project3.jpg",
+    image: "/project4.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/E-commerce-website.git",
     liveUrl: "https://e-commerce-website-pi-eosin.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Flower-Website",
     description:
       "This is a Flower Website using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Next.js and Tailwind CSS",
-    image: "/project4.jpg",
+    image: "/project5.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Flower_Shop_Website.git",
     liveUrl: "https://flower-shop-website-ykeb.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Carvilla-Website",
     description:
       "This is a Carvilla website built using HTML, CSS, and TypeScript. It is a responsive web application that looks great on all devices.",
     language: "HTML, CSS and TypeScript",
-    image: "/project5.jpg",
+    image: "/project6.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Carvilla-website.git",
     liveUrl: "https://carvilla-website.vercel.app",
   },
-  {
-    id: 6,
-    name: "CoffeeHut-Website",
-    description: "This is a Coffeehut web built using HTML, CSS.",
-    language: "HTML and CSS",
-    image: "/project6.jpg",
-    githubUrl: "https://github.com/AreebaSadiq23/Coffee-website.git",
-    liveUrl: "https://coffee-website-beta-two.vercel.app",
-  },
+  
 ];
 
 const ProjectsSection: React.FC = () => {

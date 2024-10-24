@@ -22,7 +22,6 @@ const Sidebar: React.FC = () => {
         />
       </div>
 
-      {/* Animated Hamburger Icon */}
       <button
         className="fixed top-4 right-4 p-3 z-30 flex flex-col items-center"
         onClick={toggleSidebar}

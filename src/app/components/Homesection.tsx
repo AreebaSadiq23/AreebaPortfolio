@@ -18,7 +18,7 @@ const DecorativeDots: React.FC = () => {
 
 const DecorativeCircles: React.FC = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute  inset-0 overflow-hidden pointer-events-none">
       {Array.from({ length: 4 }).map((_, index) => (
         <div
           key={index}
@@ -39,7 +39,7 @@ const DecorativeCircles: React.FC = () => {
 
 const HomeSection: React.FC = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen w-full">
       <DecorativeCircles />
       <div
         id="home"
