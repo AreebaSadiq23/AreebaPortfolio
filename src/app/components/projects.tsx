@@ -4,7 +4,6 @@ import { FaArrowRight, FaArrowLeft, FaGithub, FaLink } from "react-icons/fa";
 
 const DecorativeDots: React.FC = () => {
   return (
-    
     <div className="flex justify-center space-x-2 mt-8 max-w-screen-2xl mx-auto">
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-200" />
@@ -22,7 +21,6 @@ interface Project {
   description: string;
   language: string;
   image: string;
-  
   githubUrl: string;
   liveUrl: string;
 }
@@ -32,7 +30,7 @@ const projects: Project[] = [
     id: 1,
     name: "Roamstay-website",
     description:
-    "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
+      "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
     language: "HTML, CSS and JavaScript",
     image: "/project1.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
@@ -42,7 +40,7 @@ const projects: Project[] = [
     id: 2,
     name: "Education-Website",
     description:
-    "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
+      "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Nextjs and TailwindCSS",
     image: "/project2.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/nextjs-project-educa-web.git",
@@ -88,7 +86,6 @@ const projects: Project[] = [
     githubUrl: "https://github.com/AreebaSadiq23/Carvilla-website.git",
     liveUrl: "https://carvilla-website.vercel.app",
   },
-  
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -126,7 +123,7 @@ const ProjectsSection: React.FC = () => {
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white border-2 border-gray-500 hover:border-gray-400 rounded-full p-3"
+              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"
             >
               <FaGithub size={24} />
             </a>
@@ -134,7 +131,7 @@ const ProjectsSection: React.FC = () => {
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white border-2 border-gray-500 hover:border-gray-400 rounded-full p-3"
+              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"
             >
               <FaLink size={24} />
             </a>

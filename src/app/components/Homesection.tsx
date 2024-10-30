@@ -18,7 +18,7 @@ const DecorativeDots: React.FC = () => {
 
 const DecorativeCircles: React.FC = () => {
   return (
-    <div className="absolute  inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {Array.from({ length: 4 }).map((_, index) => (
         <div
           key={index}
@@ -49,10 +49,10 @@ const HomeSection: React.FC = () => {
           <h2 className="text-lg md:text-3xl lg:text-4xl text-white animate-fadeIn">
             Frontend Developer
           </h2>
-          <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-400 font-bold animate-fadeIn animate-delay-200">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-200 font-bold animate-fadeIn animate-delay-200">
             Hi I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>
           </h1>
-          <p className="text-sm md:text-lg lg:text-2xl max-w-xs md:max-w-md text-gray-50 font-mono animate-fadeIn animate-delay-400">
+          <p className="text-sm md:text-lg lg:text-2xl max-w-xs md:max-w-md text-gray-300 font-mono animate-fadeIn animate-delay-400">
             I create beautiful and functional web applications. Let&apos;s bring your ideas to life!
           </p>
           <div className="flex space-x-4 mt-4">
@@ -60,17 +60,19 @@ const HomeSection: React.FC = () => {
               href="https://github.com/AreebaSadiq23"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white text-black rounded-full hover:bg-gray-400 transition duration-300 hover:scale-105"
+              className="flex items-center justify-center relative w-10 h-10 md:w-12 md:h-12 bg-gray-800 text-white rounded-full transition duration-300 hover:scale-105 overflow-hidden"
             >
-              <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
+              <div className="absolute inset-0 border-2 border-teal-600 rounded-full animate-pulse"></div>
+              <FaGithub className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/areeba-sadiq-05a499315"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white text-black rounded-full hover:bg-gray-400 transition duration-300 hover:scale-105"
+              className="flex items-center justify-center relative w-10 h-10 md:w-12 md:h-12 bg-gray-800 text-white rounded-full transition duration-300 hover:scale-105 overflow-hidden"
             >
-              <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
+              <div className="absolute inset-0 border-2 border-teal-600 rounded-full animate-pulse"></div>
+              <FaLinkedin className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
           </div>
           <DecorativeDots />
@@ -79,18 +81,105 @@ const HomeSection: React.FC = () => {
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
           <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn">
             <Image
-              src="/img1.png"
+              src="/img1.png" // Ensure this path is correct
               alt="Profile"
               className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
               width={600}
               height={600}
             />
-            <div className="absolute inset-0 border-2 md:border-4 border-dashed border-teal-600 rounded-full animate-spin-slow pointer-events-none"></div>
+            <div className="absolute inset-0 border-4 border-dashed border-teal-600 rounded-full animate-spin-slow pointer-events-none"></div>
           </div>
+          <div className="absolute inset-0 bg-cover bg-center opacity-30 animation-background"></div>
         </div>
-
-        <div className="absolute inset-0 bg-cover bg-center opacity-30 animation-background"></div>
       </div>
+
+      <style jsx>{`
+        @keyframes spin-slow {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes background-animation {
+          0% {
+            opacity: 0.2;
+          }
+          50% {
+            opacity: 0.4;
+          }
+          100% {
+            opacity: 0.2;
+          }
+        }
+
+        .animate-spin-slow {
+          animation: spin-slow 3s linear infinite; /* Set default speed */
+        }
+
+        @media (max-width: 768px) { /* Adjust speed for smaller screens */
+          .animate-spin-slow {
+            animation: spin-slow 6s linear infinite; /* Slower speed */
+          }
+        }
+
+        .animation-background {
+          animation: background-animation 5s ease-in-out infinite; /* Set consistent speed */
+        }
+
+        /* Adjusting bounce animation */
+        @keyframes bounceIn {
+          0% {
+            transform: scale(0);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        .animate-bounceIn {
+          animation: bounceIn 1s ease-in-out; /* Set consistent speed */
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-in-out; /* Set consistent speed */
+        }
+
+        /* Adjust the speed of floating circles */
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .animate-float {
+          animation: float 2s ease-in-out infinite; /* Set consistent speed */
+        }
+      `}</style>
     </div>
   );
 };
