@@ -16,7 +16,6 @@ const DecorativeDots: React.FC = () => {
   );
 };
 
-// Contact Component
 const Contact: React.FC = () => {
   const [borderColor, setBorderColor] = useState("#4fd1c5");
 
@@ -25,9 +24,9 @@ const Contact: React.FC = () => {
       setBorderColor((prevColor) =>
         prevColor === "#4fd1c5" ? "#81e6d9" : "#4fd1c5"
       );
-    }, 1000); // Change color every second
+    }, 1000); 
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
@@ -58,7 +57,7 @@ const Contact: React.FC = () => {
                 style={{
                   border: `2px solid ${borderColor}`,
                   borderRadius: "1rem",
-                  animation: "borderAnimation 1s infinite alternate", // Apply animation
+                  animation: "borderAnimation 1s infinite alternate", 
                 }}
                 className="flex items-center justify-center w-16 h-16 bg-gray-700 mr-3"
               >

@@ -11,7 +11,6 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="relative max-w-screen-2xl mx-auto">
-      {/* Centered Container for Logo and Button */}
       <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-30 flex items-center justify-between w-full max-w-screen-2xl px-4">
         <div>
           <Image
