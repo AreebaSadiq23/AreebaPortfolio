@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 
-
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -11,38 +10,41 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="fixed top-4 left-4 z-30">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          className="h-16 w-auto md:h-12"
-          height={500}
-          width={500}
-        />
-      </div>
+    <div className="relative max-w-screen-2xl mx-auto">
+      {/* Centered Container for Logo and Button */}
+      <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-30 flex items-center justify-between w-full max-w-screen-2xl px-4">
+        <div>
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            className="h-16 w-auto md:h-12"
+            height={500}
+            width={500}
+          />
+        </div>
 
-      <button
-        className="fixed top-4 right-4 p-3 z-30 flex flex-col items-center"
-        onClick={toggleSidebar}
-        aria-label={isOpen ? "Close sidebar" : "Open sidebar"}
-      >
-        <div
-          className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
-            isOpen ? "transform rotate-45 translate-y-2" : ""
-          }`}
-        ></div>
-        <div
-          className={`h-1 w-8 bg-white mb-1 transition-opacity duration-300 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
-        ></div>
-        <div
-          className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
-            isOpen ? "transform -rotate-45 -translate-y-2" : ""
-          }`}
-        ></div>
-      </button>
+        <button
+          className="p-3 flex flex-col items-center"
+          onClick={toggleSidebar}
+          aria-label={isOpen ? "Close sidebar" : "Open sidebar"}
+        >
+          <div
+            className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
+              isOpen ? "transform rotate-45 translate-y-2" : ""
+            }`}
+          ></div>
+          <div
+            className={`h-1 w-8 bg-white mb-1 transition-opacity duration-300 ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></div>
+          <div
+            className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
+              isOpen ? "transform -rotate-45 -translate-y-2" : ""
+            }`}
+          ></div>
+        </button>
+      </div>
 
       {/* Sidebar */}
       <div

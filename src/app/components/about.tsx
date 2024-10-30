@@ -18,7 +18,7 @@ const DecorativeDots: React.FC = () => {
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="p-4 sm:p-6 md:p-10 lg:p-16 bg-gray-900">
+    <section id="about" className="p-4 sm:p-6 md:p-10 lg:p-16 bg-gray-900 max-w-screen-2xl mx-auto">
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-6">
         About Me
       </h2>

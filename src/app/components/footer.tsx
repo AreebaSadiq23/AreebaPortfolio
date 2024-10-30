@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const PortfolioFooter: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-gray-400 py-6 sm:py-8">
+    <footer className="bg-gray-800 text-gray-400 py-6 sm:py-8 max-w-screen-2xl mx-auto">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-lg font-bold text-white">Areeba Sadiq</h2>

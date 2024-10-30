@@ -39,7 +39,7 @@ const DecorativeCircles: React.FC = () => {
 
 const HomeSection: React.FC = () => {
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full max-w-screen-2xl mx-auto">
       <DecorativeCircles />
       <div
         id="home"

@@ -4,7 +4,8 @@ import { FaArrowRight, FaArrowLeft, FaGithub, FaLink } from "react-icons/fa";
 
 const DecorativeDots: React.FC = () => {
   return (
-    <div className="flex justify-center space-x-2 mt-8">
+    
+    <div className="flex justify-center space-x-2 mt-8 max-w-screen-2xl mx-auto">
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-200" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-400" />
@@ -105,7 +106,7 @@ const ProjectsSection: React.FC = () => {
     projects[currentProject];
 
   return (
-    <section id="projects" className="py-16 px-4 bg-gray-900">
+    <section id="projects" className="py-16 px-4 bg-gray-900 max-w-screen-2xl mx-auto">
       <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8">
         My Projects
       </h2>

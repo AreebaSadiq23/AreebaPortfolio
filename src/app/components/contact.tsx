@@ -19,7 +19,7 @@ const DecorativeDots: React.FC = () => {
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="bg-gray-900 py-12">
+    <section id="contact" className="bg-gray-900 py-12 max-w-screen-2xl mx-auto">
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
         <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center">
