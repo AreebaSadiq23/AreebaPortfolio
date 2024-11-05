@@ -56,7 +56,7 @@ const About: React.FC = () => {
             <Image
               src="/javascript.png"
               alt="JavaScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover"
               width={200}
               height={200}
             />
@@ -76,6 +76,27 @@ const About: React.FC = () => {
             />
             <Image
               src="/ts.png"
+              alt="TypeScript Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-40 lg:h-40 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/git.png"
+              alt="TypeScript Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/figma.png"
+              alt="TypeScript Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/github.png"
               alt="TypeScript Skill"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
               width={200}

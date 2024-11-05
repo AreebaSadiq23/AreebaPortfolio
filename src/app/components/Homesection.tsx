@@ -50,7 +50,7 @@ const HomeSection: React.FC = () => {
             Frontend Developer
           </h2>
           <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-200 font-bold animate-fadeIn animate-delay-200">
-            Hi I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>
+            Hi, I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>
           </h1>
           <p className="text-sm md:text-lg lg:text-2xl max-w-xs md:max-w-md text-gray-300 font-mono animate-fadeIn animate-delay-400">
             I create beautiful and functional web applications. Let&apos;s bring your ideas to life!

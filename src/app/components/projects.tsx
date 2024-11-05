@@ -42,7 +42,7 @@ const projects: Project[] = [
     description:
       "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Nextjs and TailwindCSS",
-    image: "/project2.jpg",
+    image: "/project2.png",
     githubUrl: "https://github.com/AreebaSadiq23/nextjs-project-educa-web.git",
     liveUrl: "https://education-website-brown.vercel.app/",
   },
@@ -62,7 +62,7 @@ const projects: Project[] = [
     description:
       "This is an E-Commerce website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Next.js and Tailwind CSS",
-    image: "/project4.jpg",
+    image: "/project4.png",
     githubUrl: "https://github.com/AreebaSadiq23/E-commerce-website.git",
     liveUrl: "https://e-commerce-website-pi-eosin.vercel.app",
   },
@@ -103,7 +103,7 @@ const ProjectsSection: React.FC = () => {
     projects[currentProject];
 
   return (
-    <section id="projects" className="py-16 px-4 bg-gray-900 max-w-screen-2xl mx-auto">
+    <section id="projects" className="max-w-screen-2xl mx-auto">
       <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8">
         My Projects
       </h2>
