@@ -48,13 +48,13 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    name: "Amazon-Clone",
+    name: "Cake-Heaven Website",
     description:
-      "This is an Amazon clone-website built using HTML, CSS, and JavaScript.",
-    language: "HTML, CSS and JavaScript",
-    image: "/project3.jpg",
-    githubUrl: "https://github.com/AreebaSadiq23/Amazon-web-clone.git",
-    liveUrl: "https://amazon-web-clone-five.vercel.app/",
+      "This is an Cake Heaven-website built using Next.js and  CSS. It is a responsive web application that looks great on all devices.",
+    language: "NextJS and CSS",
+    image: "/project3.png",
+    githubUrl: "https://github.com/AreebaSadiq23/Cake-Haven-web.git",
+    liveUrl: "https://cake-haven-web.vercel.app/",
   },
   {
     id: 4,
@@ -86,6 +86,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/AreebaSadiq23/Carvilla-website.git",
     liveUrl: "https://carvilla-website.vercel.app",
   },
+  
 ];
 
 const ProjectsSection: React.FC = () => {
