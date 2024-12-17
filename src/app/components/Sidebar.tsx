@@ -54,7 +54,7 @@ const Sidebar: React.FC = () => {
         <ul className="space-y-6 md:space-y-10 mt-20 md:mt-28 text-xl md:text-2xl text-center">
           <li>
             <a
-              href="#home"
+              href="/#home"
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
             >
@@ -63,7 +63,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <a
-              href="#about"
+              href="/#about"
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
             >
@@ -72,7 +72,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <a
-              href="#projects"
+              href="/#projects"
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
             >
@@ -81,7 +81,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <a
-              href="#contact"
+              href="/#contact"
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
             >

@@ -21,7 +21,7 @@ const DecorativeCircles: React.FC = () => {
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {Array.from({ length: 4 }).map((_, index) => (
         <div
-          key={index}
+          key={index} 
           className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
             index === 0
               ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
@@ -81,7 +81,7 @@ const HomeSection: React.FC = () => {
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
           <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn">
             <Image
-              src="/img1.png" 
+              src="/imgprofile.png" 
               alt="Profile"
               className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
               width={600}

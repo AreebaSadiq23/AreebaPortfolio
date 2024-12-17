@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineMail, AiOutlineEnvironment, AiOutlineArrowUp } from "react-icons/ai";
 
-// Decorative Dots Component
 const DecorativeDots: React.FC = () => {
   return (
     <div className="flex justify-center space-x-2 mt-8">
@@ -11,8 +10,7 @@ const DecorativeDots: React.FC = () => {
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-600" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-200" />
-      
-    </div>
+      </div>
   );
 };
 
