@@ -41,7 +41,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="p-4 sm:p-6 md:p-10 lg:p-16 bg-gray-900 max-w-screen-2xl mx-auto mt-6"
+      className="p-4 sm:p-6 md:p-10 lg:p-16 bg-gray-900 max-w-screen-2xl mx-auto mt-10 mb-6"
     >
       <DecorativeCircles />
       <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-6">
@@ -50,7 +50,7 @@ const About: React.FC = () => {
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-base sm:text-lg md:text-xl lg:text-xl text-center md:text-left mb-8 md:mb-0 space-y-4">
-          <p className="text-gray-400 mx-4 md:mx-8 mt-3">
+          <p className="text-gray-400 mx-4 md:mx-8 mt-5">
             Hello! I&apos;m Areeba, a student of Generative AI and a passionate
             Frontend Developer who loves crafting beautiful and functional web
             applications. With a solid foundation in HTML, CSS, and JavaScript,
@@ -73,7 +73,7 @@ const About: React.FC = () => {
           <DecorativeDots />
         </div>
 
-        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-center">
             <Image
               src="/html.png"

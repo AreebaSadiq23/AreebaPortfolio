@@ -124,13 +124,13 @@ const ProjectsSection: React.FC = () => {
     projects[currentProject];
 
   return (
-    <section id="projects" className="max-w-screen-2xl mx-auto mt-20 mb-12">
+    <section id="projects" className="max-w-screen-2xl mx-auto mt-24 mb-16 bg-gray-900">
       <DecorativeCircles />
       <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8">
         My Projects
       </h2>
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="flex-1 md:ml-10 mb-9">
+        <div className="flex-1 md:ml-14 mb-9 px-4 sm:px-6">
           <h3 className="text-3xl sm:text-4xl md:text-9xl font-bold font-mono text-white mb-4">
             0{id}
           </h3>
