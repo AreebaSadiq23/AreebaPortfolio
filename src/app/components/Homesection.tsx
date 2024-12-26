@@ -46,7 +46,7 @@ const HomeSection: React.FC = () => {
         className="flex flex-col md:flex-row items-center justify-center h-screen bg-gray-900 p-4 md:p-6"
       >
         <div className="w-full md:w-1/2 p-4 flex flex-col items-center md:items-start text-center md:text-left space-y-4 relative z-10 md:ml-24 mt-16 md:mt-0">
-          <h2 className="text-lg md:text-3xl lg:text-4xl text-white animate-fadeIn">
+          <h2 className="text-lg md:text-3xl lg:text-4xl text-slate-400 animate-fadeIn">
             Frontend Developer
           </h2>
           <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-200 font-bold animate-fadeIn animate-delay-200">
@@ -79,11 +79,11 @@ const HomeSection: React.FC = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
-          <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn">
+          <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn ">
             <Image
               src="/imgprofile.png" 
               alt="Profile"
-              className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
+              className="object-cover w-full h-full  transition-transform duration-500 transform hover:scale-105"
               width={600}
               height={600}
             />

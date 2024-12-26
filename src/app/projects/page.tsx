@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft, FaGithub, FaLink } from "react-icons/fa";
@@ -11,6 +12,26 @@ const DecorativeDots: React.FC = () => {
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-200" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-400" />
+    </div>
+  );
+};
+const DecorativeCircles: React.FC = () => {
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {Array.from({ length: 4 }).map((_, index) => (
+        <div
+          key={index}
+          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
+            index === 0
+              ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
+              : index === 1
+              ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
+              : index === 2
+              ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
+              : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
+          }`}
+        ></div>
+      ))}
     </div>
   );
 };
@@ -86,7 +107,6 @@ const projects: Project[] = [
     githubUrl: "https://github.com/AreebaSadiq23/Carvilla-website.git",
     liveUrl: "https://carvilla-website.vercel.app",
   },
-  
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -104,7 +124,8 @@ const ProjectsSection: React.FC = () => {
     projects[currentProject];
 
   return (
-    <section id="projects" className="max-w-screen-2xl mx-auto">
+    <section id="projects" className="max-w-screen-2xl mx-auto mt-20 mb-12">
+      <DecorativeCircles />
       <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8">
         My Projects
       </h2>
@@ -114,7 +135,9 @@ const ProjectsSection: React.FC = () => {
             0{id}
           </h3>
           <h4 className="text-lg md:text-4xl text-white mb-4">{name}</h4>
-          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4">{description}</p>
+          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4">
+            {description}
+          </p>
           <p className="text-sm sm:text-base md:text-lg text-teal-600 font-normal mb-4">
             {language}
           </p>

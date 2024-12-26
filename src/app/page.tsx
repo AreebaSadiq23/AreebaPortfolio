@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from 'react'; 
 import Sidebar from './components/Sidebar';
 import HomeSection from './components/Homesection';
-import About from './components/about';
-import ProjectsSection from './components/projects';
-import Contact from './components/contact';
 import Footer from './components/footer';
 import Loader from './components/loader'; 
 
@@ -26,9 +23,6 @@ export default function Home() {
         <Sidebar />
         <div className="w-full">
           <HomeSection />
-          <About />
-          <ProjectsSection />
-          <Contact />
           <Footer />
         </div>
       </div>

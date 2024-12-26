@@ -1,5 +1,10 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import { AiOutlineMail, AiOutlineEnvironment, AiOutlineArrowUp } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiOutlineEnvironment,
+  AiOutlineArrowUp,
+} from "react-icons/ai";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -10,7 +15,27 @@ const DecorativeDots: React.FC = () => {
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-600" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce" />
       <div className="w-3 h-3 bg-teal-600 rounded-full animate-bounce delay-200" />
-      </div>
+    </div>
+  );
+};
+const DecorativeCircles: React.FC = () => {
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {Array.from({ length: 4 }).map((_, index) => (
+        <div
+          key={index}
+          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
+            index === 0
+              ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
+              : index === 1
+              ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
+              : index === 2
+              ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
+              : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
+          }`}
+        ></div>
+      ))}
+    </div>
   );
 };
 
@@ -22,13 +47,21 @@ const Contact: React.FC = () => {
       setBorderColor((prevColor) =>
         prevColor === "#4fd1c5" ? "#81e6d9" : "#4fd1c5"
       );
-    }, 1000); 
+    }, 1000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="contact" className="bg-gray-900 py-12 max-w-screen-2xl mx-auto">
+    <section
+      id="contact"
+      className="bg-gray-900 py-12 max-w-screen-2xl mx-auto mt-10"
+    >
+      <DecorativeCircles />
+
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
+        Contact Now!
+      </h2>
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
         <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center">
@@ -47,7 +80,9 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Location:</strong>
                 <br />
-                <span className="text-sm text-cyan-500 font-mono">Karachi, Pakistan</span>
+                <span className="text-sm text-cyan-500 font-mono">
+                  Karachi, Pakistan
+                </span>
               </span>
             </p>
             <p className="mb-6 flex items-center">
@@ -55,7 +90,7 @@ const Contact: React.FC = () => {
                 style={{
                   border: `2px solid ${borderColor}`,
                   borderRadius: "1rem",
-                  animation: "borderAnimation 1s infinite alternate", 
+                  animation: "borderAnimation 1s infinite alternate",
                 }}
                 className="flex items-center justify-center w-16 h-16 bg-gray-700 mr-3"
               >
