@@ -84,8 +84,8 @@ const projects: Project[] = [
       "This is an E-Commerce website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Next.js and Tailwind CSS",
     image: "/project4.png",
-    githubUrl: "https://github.com/AreebaSadiq23/E-commerce-website.git",
-    liveUrl: "https://e-commerce-website-pi-eosin.vercel.app",
+    githubUrl: "https://github.com/AreebaSadiq23/UI-UX-project.git",
+    liveUrl: "https://ui-ux-project-sable.vercel.app",
   },
   {
     id: 5,
