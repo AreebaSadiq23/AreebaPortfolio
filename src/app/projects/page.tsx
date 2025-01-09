@@ -49,6 +49,16 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    name: "Blog-Website",
+    description:
+      "This is an Blog-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
+    language: "Nextjs and TailwindCSS",
+    image: "/blog.jpeg",
+    githubUrl: "https://github.com/AreebaSadiq23/nextjs-blog-web.git",
+    liveUrl: "https://nextjs-blog-web-theta.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Roamstay-website",
     description:
       "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
@@ -58,7 +68,7 @@ const projects: Project[] = [
     liveUrl: "https://booking-web-jet.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     name: "Education-Website",
     description:
       "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
@@ -68,7 +78,7 @@ const projects: Project[] = [
     liveUrl: "https://education-website-brown.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Cake-Heaven Website",
     description:
       "This is an Cake Heaven-website built using Next.js and  CSS. It is a responsive web application that looks great on all devices.",
@@ -78,7 +88,7 @@ const projects: Project[] = [
     liveUrl: "https://cake-haven-web.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "E-Commerce-Website",
     description:
       "This is an E-Commerce website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
@@ -88,7 +98,7 @@ const projects: Project[] = [
     liveUrl: "https://ui-ux-project-sable.vercel.app",
   },
   {
-    id: 5,
+    id: 6,
     name: "Flower-Website",
     description:
       "This is a Flower Website using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
@@ -98,7 +108,7 @@ const projects: Project[] = [
     liveUrl: "https://flower-shop-website-ykeb.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Carvilla-Website",
     description:
       "This is a Carvilla website built using HTML, CSS, and TypeScript. It is a responsive web application that looks great on all devices.",
