@@ -6,7 +6,7 @@ const PortfolioFooter: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-lg font-bold text-white">Areeba Sadiq</h2>
-          <p className="text-sm">© 2024 All Rights Reserved</p>
+          <p className="text-sm">© 2025 All Rights Reserved</p>
         </div>
 
         <div className="flex space-x-4 justify-center md:justify-end">
