@@ -81,7 +81,7 @@ const HomeSection: React.FC = () => {
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
           <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn ">
              <Image
-              src="/imgp.png" 
+              src="/img.png" 
               alt="Profile"
               className="object-cover w-full h-full  transition-transform duration-500 transform hover:scale-105 lg:mr-16 "
               width={600}
