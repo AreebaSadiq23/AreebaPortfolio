@@ -47,7 +47,7 @@ const HomeSection: React.FC = () => {
       >
         <div className="w-full md:w-1/2 p-4 flex flex-col items-center md:items-start text-center md:text-left space-y-4 relative z-10 md:ml-24 mt-16 md:mt-0">
           <h2 className="text-lg md:text-3xl lg:text-4xl text-slate-400 animate-fadeIn">
-            Frontend Developer
+            Full Stack Developer
           </h2>
           <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-200 font-bold animate-fadeIn animate-delay-200">
             Hi, I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>

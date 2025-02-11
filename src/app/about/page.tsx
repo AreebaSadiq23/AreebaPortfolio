@@ -51,24 +51,40 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-base sm:text-lg md:text-xl lg:text-xl text-center md:text-left mb-8 md:mb-0 space-y-4">
           <p className="text-gray-400 mx-4 md:mx-8 mt-5">
-            Hello! I&apos;m Areeba, a student of Generative AI and a passionate
-            Frontend Developer who loves crafting beautiful and functional web
-            applications. With a solid foundation in HTML, CSS, and JavaScript,
-            I enjoy turning complex problems into simple and intuitive designs.
-            My journey in web development started with curiosity, and over time,
-            it will transform into a successful career.
+            Hello! I&apos;m Areeba, I am a passionate Full Stack Developer with
+            a strong foundation in web technologies like HTML, CSS, JavaScript,
+            TypeScript, and Tailwind CSS, and a solid background in back-end
+            development with Node.js, Python, and databases. I specialize in
+            building dynamic, user-friendly web applications from start to
+            finish, ensuring the best possible user experience and seamless
+            functionality.
           </p>
           <p className="text-gray-400 mx-4 md:mx-8">
-            I am currently learning Next.js and Tailwind CSS to further enhance
-            my web development skills. I enjoy working with modern technologies
-            and preparing myself for new challenges. I am striving to improve
-            the learning process through my experiences so that I can create
-            modern and efficient web applications. My desire is to provide
-            creative solutions by practically applying my skills that enhance
-            user experiences.
+            In addition to my web development skills, I am currently expanding
+            my knowledge in Agentic AI. I am excited to explore how artificial
+            intelligence can be integrated into web applications to create
+            smarter, more intuitive solutions. My exploration of Agentic AI is
+            helping me understand how to create systems that not only respond to
+            user input but anticipate and adapt to user needs, making
+            applications more efficient and user-centric.
           </p>
           <p className="text-gray-400 mx-4 md:mx-8">
-            Looking for a Frontend Developer? Let&apos;s connect on LinkedIn!
+            I also work with modern tools like Figma for interactive designs and
+            Sanity for flexible content management. Whether it&apos;s creating
+            responsive designs or optimizing back-end performance, I am always
+            focused on building applications that are scalable, maintainable,
+            and user-friendly.
+          </p>
+          <p className="text-gray-400 mx-4 md:mx-8">
+            As I continue to explore the potential of Agentic AI, I am eager to
+            incorporate AI-driven features into my projects, pushing the
+            boundaries of what's possible in web development. I’m always
+            learning, adapting, and collaborating on new projects to stay ahead
+            of the curve in this rapidly evolving field.
+          </p>
+
+          <p className="text-gray-400 mx-4 md:mx-8">
+            Looking for a Web Developer? Let&apos;s connect!
           </p>
           <DecorativeDots />
         </div>
@@ -78,63 +94,84 @@ const About: React.FC = () => {
             <Image
               src="/html.png"
               alt="HTML Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/css.png"
               alt="CSS Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/javascript.png"
               alt="JavaScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 lg:mt-5  object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/tailwind.png"
               alt="Tailwind CSS Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-44 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/next.png"
               alt="Next.js Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-40 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/ts.png"
               alt="TypeScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-40 lg:h-40 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-40 lg:h-48 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/git.png"
-              alt="TypeScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              alt="Git Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/figma.png"
-              alt="TypeScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              alt="Figma Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 object-cover"
               width={200}
               height={200}
             />
             <Image
               src="/github.png"
-              alt="TypeScript Skill"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 object-cover"
+              alt="Github Skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/pyhton.png"
+              alt="python SKill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-36 lg:h-36 lg:mt-10 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/react.png"
+              alt="react skill"
+              className="w-18 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 lg:mt-10 object-cover"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/node.png"
+              alt="node skill"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 lg:mt-10 object-cover"
               width={200}
               height={200}
             />
