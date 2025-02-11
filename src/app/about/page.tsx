@@ -78,7 +78,7 @@ const About: React.FC = () => {
           <p className="text-gray-400 mx-4 md:mx-8">
             As I continue to explore the potential of Agentic AI, I am eager to
             incorporate AI-driven features into my projects, pushing the
-            boundaries of what's possible in web development. I’m always
+            boundaries of what&apos;s possible in web development. I&apos;m always
             learning, adapting, and collaborating on new projects to stay ahead
             of the curve in this rapidly evolving field.
           </p>
