@@ -5,6 +5,8 @@ import {
   AiOutlineEnvironment,
   AiOutlineArrowUp,
 } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -40,6 +42,13 @@ const DecorativeCircles: React.FC = () => {
 };
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    }, []);
   const [borderColor, setBorderColor] = useState("#4fd1c5");
 
   useEffect(() => {
@@ -59,19 +68,19 @@ const Contact: React.FC = () => {
     >
       <DecorativeCircles />
 
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
+      <h2 data-aos="zoom-in" className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
         Contact Now!
       </h2>
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
         <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center">
           <div className="info text-gray-400">
-            <p className="mb-6 flex items-center">
+            <p data-aos="zoom-in" className="mb-6 flex items-center">
               <span
                 style={{
                   border: `2px solid ${borderColor}`,
                   borderRadius: "1rem",
-                  animation: "borderAnimation 1s infinite alternate", // Apply animation
+                  animation: "borderAnimation 1s infinite alternate",
                 }}
                 className="flex items-center justify-center w-16 h-16 bg-gray-700 mr-3"
               >
@@ -85,7 +94,7 @@ const Contact: React.FC = () => {
                 </span>
               </span>
             </p>
-            <p className="mb-6 flex items-center">
+            <p className="mb-6 flex items-center" data-aos="zoom-in">
               <span
                 style={{
                   border: `2px solid ${borderColor}`,
@@ -109,7 +118,7 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg">
+        <div className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg" data-aos="zoom-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600 text-center">
             Get in Touch
           </h2>

@@ -21,7 +21,7 @@ const DecorativeCircles: React.FC = () => {
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {Array.from({ length: 4 }).map((_, index) => (
         <div
-          key={index} 
+          key={index}
           className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
             index === 0
               ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
@@ -50,10 +50,12 @@ const HomeSection: React.FC = () => {
             Full Stack Developer
           </h2>
           <h1 className="text-2xl md:text-5xl lg:text-7xl text-slate-200 font-bold animate-fadeIn animate-delay-200">
-            Hi, I&apos;m <br /> <span className="text-teal-600">Areeba Sadiq</span>
+            Hi, I&apos;m <br />{" "}
+            <span className="text-teal-600">Areeba Sadiq</span>
           </h1>
           <p className="text-sm md:text-lg lg:text-2xl max-w-xs md:max-w-md text-gray-300 font-mono animate-fadeIn animate-delay-400">
-            I create beautiful and functional web applications. Let&apos;s bring your ideas to life!
+            I create beautiful and functional web applications. Let&apos;s bring
+            your ideas to life!
           </p>
           <div className="flex space-x-4 mt-4">
             <a
@@ -80,8 +82,8 @@ const HomeSection: React.FC = () => {
 
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
           <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn ">
-             <Image
-              src="/img.png" 
+            <Image
+              src="/img.png"
               alt="Profile"
               className="object-cover w-full h-full  transition-transform duration-500 transform hover:scale-105 lg:mr-16 "
               width={600}
@@ -119,7 +121,8 @@ const HomeSection: React.FC = () => {
           animation: spin-slow 3s linear infinite; /* Set default speed */
         }
 
-        @media (max-width: 768px) { /* Adjust speed for smaller screens */
+        @media (max-width: 768px) {
+          /* Adjust speed for smaller screens */
           .animate-spin-slow {
             animation: spin-slow 6s linear infinite; /* Slower speed */
           }

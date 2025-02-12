@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft, FaGithub, FaLink } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -120,6 +122,13 @@ const projects: Project[] = [
 ];
 
 const ProjectsSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   const [currentProject, setCurrentProject] = useState<number>(0);
 
   const handleNext = () => {
@@ -134,21 +143,41 @@ const ProjectsSection: React.FC = () => {
     projects[currentProject];
 
   return (
-    <section id="projects" className="max-w-screen-2xl mx-auto mt-24 mb-16 bg-gray-900">
+    <section
+      id="projects"
+      className="max-w-screen-2xl mx-auto mt-24 mb-16 bg-gray-900"
+    >
       <DecorativeCircles />
-      <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8">
+      <h2
+        data-aos="zoom-in"
+        className="text-4xl sm:text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-8"
+      >
         My Projects
       </h2>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1 md:ml-14 mb-9 px-4 sm:px-6">
-          <h3 className="text-3xl sm:text-4xl md:text-9xl font-bold font-mono text-white mb-4">
+          <h3
+            data-aos="zoom-in"
+            className="text-3xl sm:text-4xl md:text-9xl font-bold font-mono text-white mb-4"
+          >
             0{id}
           </h3>
-          <h4 className="text-lg md:text-4xl text-white mb-4">{name}</h4>
-          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4">
+          <h4
+            data-aos="zoom-in"
+            className="text-lg md:text-4xl text-white mb-4"
+          >
+            {name}
+          </h4>
+          <p
+            data-aos="zoom-in"
+            className="text-gray-400 text-base sm:text-lg md:text-xl mb-4"
+          >
             {description}
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-teal-600 font-normal mb-4">
+          <p
+            data-aos="zoom-in"
+            className="text-sm sm:text-base md:text-lg text-teal-600 font-normal mb-4"
+          >
             {language}
           </p>
           <div className="my-2 border-t border-gray-500 w-full"></div>
@@ -157,7 +186,7 @@ const ProjectsSection: React.FC = () => {
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"
+              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"data-aos="fade-left"
             >
               <FaGithub size={24} />
             </a>
@@ -165,7 +194,7 @@ const ProjectsSection: React.FC = () => {
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"
+              className="text-white border-2 border-gray-500 hover:border-teal-400 transition-colors duration-300 rounded-full p-3"data-aos="fade-left"
             >
               <FaLink size={24} />
             </a>
@@ -173,7 +202,10 @@ const ProjectsSection: React.FC = () => {
           <DecorativeDots />
         </div>
         <div className="flex-1 flex flex-col items-center">
-          <div className="w-full max-w-xs sm:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-96 bg-gray-700 p-4 flex justify-center items-center overflow-hidden">
+          <div
+            data-aos="zoom-in"
+            className="w-full max-w-xs sm:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-96 bg-gray-700 p-4 flex justify-center items-center overflow-hidden"
+          >
             <Image
               src={image}
               alt={name}
@@ -185,13 +217,13 @@ const ProjectsSection: React.FC = () => {
           <div className="flex items-center justify-center space-x-4 mt-4">
             <button
               onClick={handlePrevious}
-              className="text-white bg-slate-600 hover:bg-slate-700 rounded-full p-2 md:p-3 border-2 border-gray-500 hover:border-gray-400"
+              className="text-white bg-slate-600 hover:bg-slate-700 rounded-full p-2 md:p-3 border-2 border-gray-500 hover:border-gray-400"data-aos="zoom-in"
             >
               <FaArrowLeft size={24} />
             </button>
             <button
               onClick={handleNext}
-              className="text-white bg-slate-600 hover:bg-slate-700 rounded-full p-2 md:p-3 border-2 border-gray-500 hover:border-gray-400"
+              className="text-white bg-slate-600 hover:bg-slate-700 rounded-full p-2 md:p-3 border-2 border-gray-500 hover:border-gray-400"data-aos="zoom-in"
             >
               <FaArrowRight size={24} />
             </button>

@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -38,19 +41,30 @@ const DecorativeCircles: React.FC = () => {
 };
 
 const About: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section
       id="about"
       className="p-4 sm:p-6 md:p-10 lg:p-16 bg-gray-900 max-w-screen-2xl mx-auto mt-10 mb-6"
     >
       <DecorativeCircles />
-      <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-6">
+      <h2
+        data-aos="fade-up"
+        className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-6"
+      >
         About Me
       </h2>
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-base sm:text-lg md:text-xl lg:text-xl text-center md:text-left mb-8 md:mb-0 space-y-4">
-          <p className="text-gray-400 mx-4 md:mx-8 mt-5">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 mt-5">
             Hello! I&apos;m Areeba, I am a passionate Full Stack Developer with
             a strong foundation in web technologies like HTML, CSS, JavaScript,
             TypeScript, and Tailwind CSS, and a solid background in back-end
@@ -59,7 +73,7 @@ const About: React.FC = () => {
             finish, ensuring the best possible user experience and seamless
             functionality.
           </p>
-          <p className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             In addition to my web development skills, I am currently expanding
             my knowledge in Agentic AI. I am excited to explore how artificial
             intelligence can be integrated into web applications to create
@@ -68,29 +82,32 @@ const About: React.FC = () => {
             user input but anticipate and adapt to user needs, making
             applications more efficient and user-centric.
           </p>
-          <p className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             I also work with modern tools like Figma for interactive designs and
             Sanity for flexible content management. Whether it&apos;s creating
             responsive designs or optimizing back-end performance, I am always
             focused on building applications that are scalable, maintainable,
             and user-friendly.
           </p>
-          <p className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             As I continue to explore the potential of Agentic AI, I am eager to
             incorporate AI-driven features into my projects, pushing the
-            boundaries of what&apos;s possible in web development. I&apos;m always
+            boundaries of what's possible in web development. I&apos;m always
             learning, adapting, and collaborating on new projects to stay ahead
             of the curve in this rapidly evolving field.
           </p>
 
-          <p className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             Looking for a Web Developer? Let&apos;s connect!
           </p>
           <DecorativeDots />
         </div>
 
         <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-          <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-center">
+          <div
+            data-aos="zoom-in"
+            className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-center"
+          >
             <Image
               src="/html.png"
               alt="HTML Skill"
@@ -181,5 +198,4 @@ const About: React.FC = () => {
     </section>
   );
 };
-
 export default About;
