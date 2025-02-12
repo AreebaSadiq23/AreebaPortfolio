@@ -92,7 +92,7 @@ const About: React.FC = () => {
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             As I continue to explore the potential of Agentic AI, I am eager to
             incorporate AI-driven features into my projects, pushing the
-            boundaries of what's possible in web development. I&apos;m always
+            boundaries of what&apos;s possible in web development. I&apos;m always
             learning, adapting, and collaborating on new projects to stay ahead
             of the curve in this rapidly evolving field.
           </p>
@@ -105,12 +105,12 @@ const About: React.FC = () => {
 
         <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <div
-            data-aos="zoom-in"
             className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-center"
           >
             <Image
               src="/html.png"
               alt="HTML Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -118,6 +118,7 @@ const About: React.FC = () => {
             <Image
               src="/css.png"
               alt="CSS Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -125,6 +126,7 @@ const About: React.FC = () => {
             <Image
               src="/javascript.png"
               alt="JavaScript Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 lg:mt-5  object-cover"
               width={200}
               height={200}
@@ -132,6 +134,7 @@ const About: React.FC = () => {
             <Image
               src="/tailwind.png"
               alt="Tailwind CSS Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-44 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -139,6 +142,7 @@ const About: React.FC = () => {
             <Image
               src="/next.png"
               alt="Next.js Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-40 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -146,6 +150,7 @@ const About: React.FC = () => {
             <Image
               src="/ts.png"
               alt="TypeScript Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-40 lg:h-48 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -153,6 +158,7 @@ const About: React.FC = () => {
             <Image
               src="/git.png"
               alt="Git Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -160,6 +166,7 @@ const About: React.FC = () => {
             <Image
               src="/figma.png"
               alt="Figma Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 object-cover"
               width={200}
               height={200}
@@ -167,6 +174,7 @@ const About: React.FC = () => {
             <Image
               src="/github.png"
               alt="Github Skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
               width={200}
               height={200}
@@ -174,6 +182,7 @@ const About: React.FC = () => {
             <Image
               src="/pyhton.png"
               alt="python SKill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-36 lg:h-36 lg:mt-10 object-cover"
               width={200}
               height={200}
@@ -181,6 +190,7 @@ const About: React.FC = () => {
             <Image
               src="/react.png"
               alt="react skill"
+              data-aos="zoom-in"
               className="w-18 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 lg:mt-10 object-cover"
               width={200}
               height={200}
@@ -188,6 +198,7 @@ const About: React.FC = () => {
             <Image
               src="/node.png"
               alt="node skill"
+              data-aos="zoom-in"
               className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-36 lg:mt-10 object-cover"
               width={200}
               height={200}
