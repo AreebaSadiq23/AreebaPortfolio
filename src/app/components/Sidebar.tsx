@@ -76,7 +76,7 @@ const Sidebar: React.FC = () => {
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
             >
-              Project
+              Projects
             </a>
           </li>
           <li>
