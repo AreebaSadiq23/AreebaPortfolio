@@ -63,7 +63,7 @@ const projects: Project[] = [
     id: 2,
     name: "Blog-Website",
     description:
-    "A fast and responsive blog website built with Next.js and styled using Tailwind CSS. It includes a homepage with recent blog posts, individual post pages, comment sections, and a search feature. The website provides a smooth, mobile-first user experience with modern UI elements.",
+    "A fast and responsive blog website built with Next.js and styled using Tailwind CSS. It includes a homepage with recent blog posts, post pages, comment sections. The website provides a smooth, mobile-first user experience with modern UI elements.",
     language: "Nextjs and TailwindCSS",
     image: "/blog.jpeg",
     githubUrl: "https://github.com/AreebaSadiq23/nextjs-blog-web.git",
