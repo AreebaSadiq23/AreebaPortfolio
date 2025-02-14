@@ -51,16 +51,26 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    name: "E-Commerce-Website",
+    description:
+    "I have designed and developed this e-commerce website using Next.js and Tailwind CSS, ensuring a modern UI/UX with full responsiveness. The project is optimized for fast performance and a smooth user experience. It includes product listing, a search feature, a wishlist system, a cart system, and an interactive UI. Additionally, Sanity CMS is integrated for efficient and dynamic content management, making the website scalable and easy to update. This project highlights a powerful, efficient, and user-friendly approach to e-commerce solutions.",
+    language: "Next.js and Tailwind CSS",
+    image: "/project4.png",
+    githubUrl: "https://github.com/AreebaSadiq23/e-commerce-web-project.git",
+    liveUrl: "https://e-commerce-web-project-one.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Blog-Website",
     description:
-      "This is an Blog-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
+    "A fast and responsive blog website built with Next.js and styled using Tailwind CSS. It includes a homepage with recent blog posts, individual post pages, comment sections, and a search feature. The website provides a smooth, mobile-first user experience with modern UI elements.",
     language: "Nextjs and TailwindCSS",
     image: "/blog.jpeg",
     githubUrl: "https://github.com/AreebaSadiq23/nextjs-blog-web.git",
     liveUrl: "https://nextjs-blog-web-theta.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Roamstay-website",
     description:
       "This is a Roamstay-web built using HTML, CSS, and Typescript. It is a responsive web application that looks great on all devices.",
@@ -70,7 +80,7 @@ const projects: Project[] = [
     liveUrl: "https://booking-web-jet.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Education-Website",
     description:
       "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
@@ -80,7 +90,7 @@ const projects: Project[] = [
     liveUrl: "https://education-website-brown.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Cake-Heaven Website",
     description:
       "This is an Cake Heaven-website built using Next.js and  CSS. It is a responsive web application that looks great on all devices.",
@@ -88,16 +98,6 @@ const projects: Project[] = [
     image: "/project3.png",
     githubUrl: "https://github.com/AreebaSadiq23/Cake-Haven-web.git",
     liveUrl: "https://cake-haven-web.vercel.app/",
-  },
-  {
-    id: 5,
-    name: "E-Commerce-Website",
-    description:
-      "This is an E-Commerce website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
-    language: "Next.js and Tailwind CSS",
-    image: "/project4.png",
-    githubUrl: "https://github.com/AreebaSadiq23/UI-UX-project.git",
-    liveUrl: "https://ui-ux-project-sable.vercel.app",
   },
   {
     id: 6,
