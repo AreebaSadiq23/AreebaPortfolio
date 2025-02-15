@@ -43,12 +43,12 @@ const DecorativeCircles: React.FC = () => {
 
 const Contact: React.FC = () => {
   useEffect(() => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-in-out",
-      });
-    }, []);
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   const [borderColor, setBorderColor] = useState("#4fd1c5");
 
   useEffect(() => {
@@ -68,7 +68,10 @@ const Contact: React.FC = () => {
     >
       <DecorativeCircles />
 
-      <h2 data-aos="zoom-in" className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
+      <h2
+        data-aos="zoom-in"
+        className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12"
+      >
         Contact Now!
       </h2>
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
@@ -118,7 +121,10 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg" data-aos="zoom-in">
+        <div
+          className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg"
+          data-aos="zoom-in"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600 text-center">
             Get in Touch
           </h2>
@@ -146,16 +152,49 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="form-group mb-4">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
-              />
+            {/* Email & Phone Input Side by Side */}
+            <div className="form-group mb-4 flex flex-col md:flex-row md:space-x-4">
+              <div className="flex-1 mb-4 md:mb-0">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                />
+              </div>
+              <div className="flex-1">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  required
+                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                />
+              </div>
             </div>
+
+            {/* Select Service */}
+            <div className="form-group mb-4">
+              <select
+                id="service"
+                name="service"
+                required
+                className="w-full border border-gray-300 rounded p-3 bg-gray-800 text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+              >
+                <option value="" disabled selected>
+                  Select a Service
+                </option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="uiux">UI/UX Designer</option>
+                <option value="graphic desgining">Graphic Designing</option>
+                <option value="web design">Responsive Web Design</option>
+              </select>
+            </div>
+
+            {/* Message Input */}
             <div className="form-group mb-4">
               <textarea
                 id="message"
@@ -166,6 +205,8 @@ const Contact: React.FC = () => {
                 className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               />
             </div>
+
+            {/* Submit Button */}
             <button
               type="submit"
               className="bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center mx-auto hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:shadow-lg"
