@@ -1,5 +1,5 @@
-import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa6";
+import { FaGithub, FaDiscord } from "react-icons/fa";
+
 
 
 const PortfolioFooter: React.FC = () => {

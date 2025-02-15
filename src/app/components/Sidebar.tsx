@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { FaGithub, FaDiscord } from "react-icons/fa";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -47,59 +48,82 @@ const Sidebar: React.FC = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-gray-800 text-white p-6 transform ${
+        className={`fixed top-0 right-0 h-full w-full bg-black bg-opacity-50 backdrop-blur-lg text-white p-6 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out z-20`}
+        } transition-transform duration-300 ease-in-out z-20 flex flex-col justify-between`}
       >
-        <ul className="space-y-6 md:space-y-10 mt-20 md:mt-28 text-xl md:text-2xl text-center">
-          <li>
+        {/* Left Side Navigation */}
+        <ul className="text-left pl-6 mt-20">
+          <li className="mb-4 mt-10">
             <a
               href="/"
               onClick={toggleSidebar}
-              className="hover:text-gray-400 transition duration-300"
+              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
             >
               Home
             </a>
           </li>
-          <li>
+          <li className="mb-4 mt-10">
             <a
               href="/about"
               onClick={toggleSidebar}
-              className="hover:text-gray-400 transition duration-300"
+              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
             >
               About
             </a>
           </li>
-          <li>
+          <li className="mb-4 mt-10">
             <a
               href="/service"
               onClick={toggleSidebar}
-              className="hover:text-gray-400 transition duration-300"
+              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
             >
               Services
             </a>
           </li>
-          <li>
+          <li className="mb-4 mt-10">
             <a
               href="/projects"
               onClick={toggleSidebar}
-              className="hover:text-gray-400 transition duration-300"
+              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
             >
               Projects
             </a>
           </li>
-          <li>
+          <li className="mb-4 mt-10">
             <a
               href="/contact"
               onClick={toggleSidebar}
-              className="hover:text-gray-400 transition duration-300"
+              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
             >
               Contact
             </a>
           </li>
         </ul>
-      </div>
 
+        {/* Right Bottom Social Icons */}
+        <div className="absolute bottom-20 right-10 text-center">
+          <p className="text-3xl text-gray-500 mb-2 mr-20">
+            Follow me on <span className="text-cyan-400 text-4xl">|</span>
+          </p>
+          <div className="flex justify-center space-x-6 text-4xl">
+            <a
+              href="https://github.com/AreebaSadiq23"
+              target="_blank"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://discord.com/users/1253033429021364279"
+              target="_blank"
+              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+            >
+              <FaDiscord />
+            </a>
+          </div>
+        </div>
+      </div>
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-10"
