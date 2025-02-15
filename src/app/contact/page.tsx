@@ -126,7 +126,7 @@ const Contact: React.FC = () => {
           data-aos="zoom-in"
         >
           <h1 className="text-sm md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2">
-            Let's work together
+            Let&apos;s work together
           </h1>
           <h2 className="text-lg mb-4 text-gray-400 text-center">
             Get in touch with us so we can work together to create something
