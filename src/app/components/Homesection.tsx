@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa6";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -68,13 +69,13 @@ const HomeSection: React.FC = () => {
               <FaGithub className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/areeba-sadiq-05a499315"
+              href="https://discord.com/users/1253033429021364279"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center relative w-10 h-10 md:w-12 md:h-12 bg-gray-800 text-white rounded-full transition duration-300 hover:scale-105 overflow-hidden"
             >
               <div className="absolute inset-0 border-2 border-teal-600 rounded-full animate-pulse"></div>
-              <FaLinkedin className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
+              <FaDiscord className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
           </div>
           <DecorativeDots />

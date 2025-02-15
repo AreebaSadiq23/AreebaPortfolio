@@ -1,4 +1,6 @@
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa6";
+
 
 const PortfolioFooter: React.FC = () => {
   return (
@@ -15,18 +17,18 @@ const PortfolioFooter: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillGithub
-              size={30}
+            <FaGithub
+              size={36}
               className="hover:text-white transition duration-300"
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/areeba-sadiq-05a499315"
+            href="https://discord.com/users/1253033429021364279"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillLinkedin
-              size={30}
+            <FaDiscord
+              size={40}
               className="hover:text-white transition duration-300"
             />
           </a>
