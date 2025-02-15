@@ -72,6 +72,15 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <a
+              href="/service"
+              onClick={toggleSidebar}
+              className="hover:text-gray-400 transition duration-300"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
               href="/projects"
               onClick={toggleSidebar}
               className="hover:text-gray-400 transition duration-300"
