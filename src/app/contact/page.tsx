@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
       </h2>
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
-        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center">
+        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center mt-20 ml-10">
           <div className="info text-gray-400">
             <p data-aos="zoom-in" className="mb-6 flex items-center">
               <span
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Location:</strong>
                 <br />
-                <span className="text-sm text-cyan-500 font-mono">
+                <span className="text-lg text-cyan-500 font-mono">
                   Karachi, Pakistan
                 </span>
               </span>
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Email:</strong>
                 <br />
-                <span className="text-sm text-cyan-500 font-bold font-mono">
+                <span className="text-lg text-cyan-500  font-mono">
                   areebasadiq96@gmail.com
                 </span>
               </span>
@@ -122,67 +122,71 @@ const Contact: React.FC = () => {
 
         {/* Contact Form */}
         <div
-          className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-lg"
+          className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-auto lg:h-[600px] xl:h-[700px]"
           data-aos="zoom-in"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600 text-center">
-            Get in Touch
+          <h1 className="text-sm md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2">
+            Let's work together
+          </h1>
+          <h2 className="text-lg mb-4 text-gray-400 text-center">
+            Get in touch with us so we can work together to create something
+            incredible!
           </h2>
           <form>
             <div className="form-group mb-4 flex flex-col md:flex-row md:space-x-4">
-              <div className="flex-1 mb-4 md:mb-0">
+              <div className="flex-1 mb-4 md:mb-0 mt-5">
                 <input
                   type="text"
                   id="firstName"
                   name="firstName"
                   placeholder="Your First Name"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white border bg-slate-700 border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 mt-5">
                 <input
                   type="text"
                   id="lastName"
                   name="lastName"
                   placeholder="Your Last Name"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
 
-            {/* Email & Phone Input Side by Side */}
+            {/* Email & Phone Input */}
             <div className="form-group mb-4 flex flex-col md:flex-row md:space-x-4">
-              <div className="flex-1 mb-4 md:mb-0">
+              <div className="flex-1 mb-4 md:mb-0 mt-6">
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 mt-6">
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   placeholder="Your Phone Number"
                   required
-                  className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
 
             {/* Select Service */}
-            <div className="form-group mb-4">
+            <div className="form-group mb-4 mt-7">
               <select
                 id="service"
                 name="service"
                 required
-                className="w-full border border-gray-300 rounded p-3 bg-gray-800 text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                className="w-full border border-gray-300 rounded p-3 bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               >
                 <option value="" disabled selected>
                   Select a Service
@@ -195,14 +199,14 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Message Input */}
-            <div className="form-group mb-4">
+            <div className="form-group mb-4 mt-10">
               <textarea
                 id="message"
                 name="message"
-                rows={4}
+                rows={5}
                 placeholder="Your Message"
                 required
-                className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                className="w-full text-white  bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               />
             </div>
 
@@ -217,7 +221,6 @@ const Contact: React.FC = () => {
           </form>
         </div>
       </div>
-
       {/* CSS for Animation */}
       <style jsx>{`
         @keyframes borderAnimation {
