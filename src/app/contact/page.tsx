@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="bg-gray-900 py-12 max-w-screen-2xl mx-auto mt-10"
+      className="bg-gray-900 py-6 sm:py-8 md:py-12 max-w-screen-2xl mx-auto mt-6 sm:mt-10"
     >
       <DecorativeCircles />
 
@@ -122,98 +122,99 @@ const Contact: React.FC = () => {
 
         {/* Contact Form */}
         <div
-          className="contact-form flex-1 bg-gray-800 p-8 rounded-lg shadow-lg mx-auto md:mx-0 w-full md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-auto lg:h-[600px] xl:h-[700px]"
+          className="contact-form flex-1 bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg mx-auto w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-auto lg:h-[600px] xl:h-[700px]"
           data-aos="zoom-in"
         >
-          <h1 className="text-sm md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2">
+          <h1 className="text-base sm:text-3xl md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2">
             Let&apos;s work together
           </h1>
-          <h2 className="text-lg mb-4 text-gray-400 text-center">
+          <h2 className="text-sm sm:text-lg mb-4 text-gray-400 text-center">
             Get in touch with us so we can work together to create something
             incredible!
           </h2>
           <form>
-            <div className="form-group mb-4 flex flex-col md:flex-row md:space-x-4">
-              <div className="flex-1 mb-4 md:mb-0 mt-5">
+            {/* First Name & Last Name */}
+            <div className="form-group mb-4 flex flex-col sm:flex-row sm:space-x-4">
+              <div className="flex-1 mb-4 sm:mb-0">
                 <input
                   type="text"
                   id="firstName"
                   name="firstName"
                   placeholder="Your First Name"
                   required
-                  className="w-full text-white border  border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full lg:mt-6 text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
-              <div className="flex-1 mt-5">
+              <div className="flex-1">
                 <input
                   type="text"
                   id="lastName"
                   name="lastName"
                   placeholder="Your Last Name"
                   required
-                  className="w-full text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full lg:mt-6 text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
 
-            {/* Email & Phone Input */}
-            <div className="form-group mb-4 flex flex-col md:flex-row md:space-x-4">
-              <div className="flex-1 mb-4 md:mb-0 mt-6">
+            {/* Email & Phone */}
+            <div className="form-group mb-4 flex flex-col sm:flex-row sm:space-x-4">
+              <div className="flex-1 mb-4 sm:mb-0">
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full lg:mt-6 text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
-              <div className="flex-1 mt-6">
+              <div className="flex-1">
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   placeholder="Your Phone Number"
                   required
-                  className="w-full text-white  border border-gray-300 rounded bg-slate-700 p-3 focus:outline-none  focus:ring-2 focus:ring-blue-600 bg- placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full lg:mt-6 text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
 
             {/* Select Service */}
-            <div className="form-group mb-4 mt-7">
+            <div className="form-group mb-4">
               <select
                 id="service"
                 name="service"
                 required
-                className="w-full border border-gray-300 rounded p-3 bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                className="w-full lg:mt-6 border border-gray-300 rounded p-3 bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 hover:border-teal-500 hover:shadow-lg"
               >
                 <option value="" disabled selected>
                   Select a Service
                 </option>
                 <option value="frontend">Frontend Developer</option>
                 <option value="uiux">UI/UX Designer</option>
-                <option value="graphic desgining">Graphic Designing</option>
-                <option value="web design">Responsive Web Design</option>
+                <option value="graphic">Graphic Designing</option>
+                <option value="webdesign">Responsive Web Design</option>
               </select>
             </div>
 
-            {/* Message Input */}
-            <div className="form-group mb-4 mt-10">
+            {/* Message */}
+            <div className="form-group mb-4">
               <textarea
                 id="message"
                 name="message"
-                rows={5}
+                rows={4}
                 placeholder="Your Message"
                 required
-                className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                className="w-full lg:mt-6 text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg"
               />
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center mx-auto hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:shadow-lg"
+              className="w-[200px] bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center hover:bg-cyan-500 transition-all duration-300 hover:shadow-lg"
             >
               <AiOutlineArrowUp size={20} className="mr-2" />
               <span>Send Message</span>

@@ -48,65 +48,37 @@ const Sidebar: React.FC = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-black bg-opacity-50 backdrop-blur-lg text-white p-6 transform ${
+        className={`fixed top-0 right-0 h-full w-80 md:w-96 bg-black bg-opacity-50 backdrop-blur-lg text-white p-6 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-20 flex flex-col justify-between`}
       >
-        {/* Left Side Navigation */}
-        <ul className="text-left pl-6 mt-20">
-          <li className="mb-4 mt-10">
-            <a
-              href="/"
-              onClick={toggleSidebar}
-              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
-            >
-              Home
-            </a>
-          </li>
-          <li className="mb-4 mt-10">
-            <a
-              href="/about"
-              onClick={toggleSidebar}
-              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
-            >
-              About
-            </a>
-          </li>
-          <li className="mb-4 mt-10">
-            <a
-              href="/service"
-              onClick={toggleSidebar}
-              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
-            >
-              Services
-            </a>
-          </li>
-          <li className="mb-4 mt-10">
-            <a
-              href="/projects"
-              onClick={toggleSidebar}
-              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
-            >
-              Projects
-            </a>
-          </li>
-          <li className="mb-4 mt-10">
-            <a
-              href="/contact"
-              onClick={toggleSidebar}
-              className="ml-28 text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400"
-            >
-              Contact
-            </a>
-          </li>
+        {/* Navigation */}
+        <ul className="text-left mt-20 space-y-8 md:space-y-6">
+          {[
+            { name: "Home", link: "/" },
+            { name: "About", link: "/about" },
+            { name: "Services", link: "/service" },
+            { name: "Projects", link: "/projects" },
+            { name: "Contact", link: "/contact" },
+          ].map((item, index) => (
+            <li key={index}>
+              <a
+                href={item.link}
+                onClick={toggleSidebar}
+                className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block text-center"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
-        {/* Right Bottom Social Icons */}
-        <div className="absolute bottom-20 right-10 text-center">
-          <p className="text-3xl text-gray-500 mb-2 mr-20">
+        {/* Social Icons */}
+        <div className="absolute bottom-10 right-1/2 transform translate-x-1/2 text-center">
+          <p className="text-2xl md:text-3xl text-gray-500 mb-3">
             Follow me on <span className="text-cyan-400 text-4xl">|</span>
           </p>
-          <div className="flex justify-center space-x-6 text-4xl">
+          <div className="flex justify-center space-x-6 text-3xl md:text-4xl">
             <a
               href="https://github.com/AreebaSadiq23"
               target="_blank"
