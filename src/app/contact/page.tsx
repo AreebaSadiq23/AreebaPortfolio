@@ -64,7 +64,8 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="bg-gray-900 py-6 sm:py-8 md:py-12 max-w-screen-2xl mx-auto mt-6 sm:mt-10"
+      className="max-w-screen-2xl mx-auto mt-24 mb-16 bg-gray-900"
+
     >
       <DecorativeCircles />
 
@@ -92,7 +93,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Location:</strong>
                 <br />
-                <span className="text-lg text-cyan-500 font-mono">
+                <span className="text-md text-cyan-500 font-mono">
                   Karachi, Pakistan
                 </span>
               </span>
@@ -111,7 +112,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Email:</strong>
                 <br />
-                <span className="text-lg text-cyan-500  font-mono">
+                <span className="text-md text-cyan-500  font-mono">
                   areebasadiq96@gmail.com
                 </span>
               </span>
