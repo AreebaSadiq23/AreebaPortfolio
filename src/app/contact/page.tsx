@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
                   name="firstName"
                   placeholder="Your First Name"
                   required
-                  className="w-full text-white border bg-slate-700 border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white border  border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
               <div className="flex-1 mt-5">
@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
                   name="lastName"
                   placeholder="Your Last Name"
                   required
-                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
@@ -165,7 +165,7 @@ const Contact: React.FC = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
               <div className="flex-1 mt-6">
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                   name="phone"
                   placeholder="Your Phone Number"
                   required
-                  className="w-full text-white bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
                 rows={5}
                 placeholder="Your Message"
                 required
-                className="w-full text-white  bg-slate-700 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-transparent placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
               />
             </div>
 
