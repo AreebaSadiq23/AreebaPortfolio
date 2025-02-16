@@ -58,7 +58,7 @@ const Sidebar: React.FC = () => {
             <a
               href="/"
               onClick={toggleSidebar}
-              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block lg:mt-10"
+              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Home
             </a>
@@ -67,7 +67,7 @@ const Sidebar: React.FC = () => {
             <a
               href="/about"
               onClick={toggleSidebar}
-              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block lg:mt-10"
+              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               About
             </a>
@@ -76,7 +76,7 @@ const Sidebar: React.FC = () => {
             <a
               href="/service"
               onClick={toggleSidebar}
-              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block lg:mt-10"
+              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Services
             </a>
@@ -85,7 +85,7 @@ const Sidebar: React.FC = () => {
             <a
               href="/projects"
               onClick={toggleSidebar}
-              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block lg:mt-10"
+              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Projects
             </a>
@@ -94,7 +94,7 @@ const Sidebar: React.FC = () => {
             <a
               href="/contact"
               onClick={toggleSidebar}
-              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-400 block lg:mt-10"
+              className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Contact
             </a>
@@ -110,14 +110,14 @@ const Sidebar: React.FC = () => {
             <a
               href="https://github.com/AreebaSadiq23"
               target="_blank"
-              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+              className="text-gray-300 hover:text-cyan-800 transition-all duration-300"
             >
               <FaGithub />
             </a>
             <a
               href="https://discord.com/users/1253033429021364279"
               target="_blank"
-              className="text-gray-300 hover:text-cyan-400 transition-all duration-300"
+              className="text-gray-300 hover:text-cyan-800 transition-all duration-300"
             >
               <FaDiscord />
             </a>

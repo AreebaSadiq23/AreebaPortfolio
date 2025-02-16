@@ -4,11 +4,11 @@
 
 :root {
   --background: #111827;
-  --foreground: #171717;
+  --foreground: #111827;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717;
+    --background: #111827;
     --foreground: #111827;
   }
 }
@@ -19,7 +19,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Custom utility class */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
