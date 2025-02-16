@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
       </h2>
       <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start px-6 space-y-8 md:space-y-0">
         {/* Contact Info */}
-        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center mt-20 ml-10">
+        <div className="contact-info flex-1 p-8 mb-8 md:mb-0 flex flex-col justify-center md:mt-12">
           <div className="info text-gray-400">
             <p data-aos="zoom-in" className="mb-6 flex items-center">
               <span
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                   name="phone"
                   placeholder="Your Phone Number"
                   required
-                  className="w-full text-white  border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
+                  className="w-full text-white  border border-gray-300 rounded bg-slate-700 p-3 focus:outline-none  focus:ring-2 focus:ring-blue-600 bg- placeholder-gray-400 transition-all duration-300 ease-in-out hover:border-teal-500 hover:shadow-lg"
                 />
               </div>
             </div>
