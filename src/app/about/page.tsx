@@ -65,7 +65,8 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-base sm:text-lg md:text-xl lg:text-xl text-center md:text-left mb-8 md:mb-0 space-y-4">
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 mt-5">
-            Hello! I&apos;m Areeba, I am a passionate Full Stack Developer with
+            Hello! I&apos;m Areeba, I am a passionate Full Stack Developer
+            with 1 year of experience in building modern web applications.I have
             a strong foundation in web technologies like HTML, CSS, JavaScript,
             TypeScript, and Tailwind CSS, and a solid background in back-end
             development with Node.js, Python, and databases. I specialize in
@@ -73,6 +74,12 @@ const About: React.FC = () => {
             finish, ensuring the best possible user experience and seamless
             functionality.
           </p>
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+           With a year of hands-on experience, I have worked on various projects, 
+           enhancing my technical skills and problem-solving abilities. My expertise
+            includes building scalable and maintainable applications, focusing on 
+            responsiveness and performance optimization.
+            </p>
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             In addition to my web development skills, I am currently expanding
             my knowledge in Agentic AI. I am excited to explore how artificial
@@ -111,7 +118,7 @@ const About: React.FC = () => {
               src="/html.png"
               alt="HTML Skill"
               data-aos="zoom-in"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-20 object-cover"
               width={200}
               height={200}
             />
@@ -119,7 +126,7 @@ const About: React.FC = () => {
               src="/css.png"
               alt="CSS Skill"
               data-aos="zoom-in"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-5 object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 lg:mt-20 object-cover"
               width={200}
               height={200}
             />
@@ -127,7 +134,7 @@ const About: React.FC = () => {
               src="/javascript.png"
               alt="JavaScript Skill"
               data-aos="zoom-in"
-              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 lg:mt-5  object-cover"
+              className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 lg:mt-20  object-cover"
               width={200}
               height={200}
             />
