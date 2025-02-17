@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaDiscord } from "react-icons/fa";
+import { FiAlignRight, FiX } from "react-icons/fi";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -24,25 +25,15 @@ const Sidebar: React.FC = () => {
         </div>
 
         <button
-          className="p-3 flex flex-col items-center"
+          className="p-3 flex items-center justify-center"
           onClick={toggleSidebar}
           aria-label={isOpen ? "Close sidebar" : "Open sidebar"}
         >
-          <div
-            className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
-              isOpen ? "transform rotate-45 translate-y-2" : ""
-            }`}
-          ></div>
-          <div
-            className={`h-1 w-8 bg-white mb-1 transition-opacity duration-300 ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
-          ></div>
-          <div
-            className={`h-1 w-8 bg-white mb-1 transition-transform duration-300 ${
-              isOpen ? "transform -rotate-45 -translate-y-2" : ""
-            }`}
-          ></div>
+          {isOpen ? (
+            <FiX className="text-white text-4xl" />
+          ) : (
+            <FiAlignRight className="text-white text-4xl" />
+          )}
         </button>
       </div>
 
