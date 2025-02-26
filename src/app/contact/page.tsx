@@ -83,7 +83,8 @@ const Contact: React.FC = () => {
       toast.success("Message sent successfully!")
       reset()
     } catch (error) {
-      toast.error("Failed to send message. Please try again.")
+      console.error(error)
+      toast.error("An error occurred. Please try again.")
     }
   }
 
