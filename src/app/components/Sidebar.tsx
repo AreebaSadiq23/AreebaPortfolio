@@ -91,7 +91,6 @@ const Sidebar: React.FC = () => {
             </a>
           </li>
         </ul>
-
         {/* Social Icons */}
         <div className="absolute bottom-10 right-1/4 transform translate-x-1/2 text-center ml-28">
           <p className="text-2xl md:text-3xl text-gray-500 mb-3">
