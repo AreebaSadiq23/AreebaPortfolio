@@ -82,9 +82,7 @@ const Contact: React.FC = () => {
       console.log(data)
       toast.success("Message sent successfully!")
       reset()
-    } catch (error) {
-      toast.error("Failed to send message. Please try again.")
-    }
+    } catch (_) {    }
   }
 
   return (
@@ -224,7 +222,7 @@ const Contact: React.FC = () => {
                 {errors.phone && <p className="mt-1 text-red-500 text-sm">{errors.phone.message}</p>}
               </div>
             </div>
-            
+
             {/* Select Service */}
             <div className="form-group mb-4">
               <select
