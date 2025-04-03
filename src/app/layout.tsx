@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/app/components/Sidebar";
-import Footer from "@/app/components/footer";
+import Footer from "@/app/components/Footer";
 
 
 
