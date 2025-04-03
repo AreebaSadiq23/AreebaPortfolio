@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/app/components/Sidebar";
-import Footer from "@/app/components/Footer";
+import PortfolioFooter from "@/app/components/Footer";
 
 
 
@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <Sidebar/>
         {children}
-        <Footer/>
+        <PortfolioFooter/>
       </body>
     </html>
   );
