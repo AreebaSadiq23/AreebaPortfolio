@@ -1,6 +1,6 @@
 import { FaGithub, FaDiscord } from "react-icons/fa";
 
-const PortfolioFooter: React.FC = () => {
+const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -38,4 +38,4 @@ const PortfolioFooter: React.FC = () => {
   );
 };
 
-export default PortfolioFooter;
+export default Footer;

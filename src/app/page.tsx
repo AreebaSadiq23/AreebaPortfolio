@@ -1,8 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react'; 
-import Sidebar from './components/Sidebar';
 import HomeSection from './components/Homesection';
-import PortfolioFooter from './components/Footer';
 import Loader from './components/loader'; 
 
 export default function Home() {
@@ -20,10 +18,8 @@ export default function Home() {
     <div className="relative flex h-screen"> 
       {loading && <Loader />} 
       <div className={`flex w-full transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
-        <Sidebar />
         <div className="w-full">
           <HomeSection />
-          <PortfolioFooter />
         </div>
       </div>
     </div>
