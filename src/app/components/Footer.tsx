@@ -1,6 +1,6 @@
-import { FaGithub, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
 
-const PortfolioFooter: React.FC = () => {
+const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -32,10 +32,21 @@ const PortfolioFooter: React.FC = () => {
               className="hover:text-white transition duration-300"
             />
           </a>
+          <a
+            href="https://www.linkedin.com/in/areeba-sadiq-934a09351"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin
+              size={40}
+              className="hover:text-white transition duration-300"
+            />
+          </a>
+
         </div>
       </div>
     </footer>
   );
 };
 
-export default PortfolioFooter;
+export default Footer;
