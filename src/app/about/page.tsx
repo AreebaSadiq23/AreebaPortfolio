@@ -105,7 +105,7 @@ const About: React.FC = () => {
           </p>
 
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
-            Looking for a Web Developer? Let&apos;s connect!
+            Looking for a Web Developer? Let&apos;s connect On Linkedin!
           </p>
           <DecorativeDots />
         </div>
