@@ -2,6 +2,8 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -86,6 +88,15 @@ const HomeSection: React.FC = () => {
             >
               <div className="absolute inset-0 border-2 border-teal-600 rounded-full animate-pulse"></div>
               <FaLinkedin className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
+            </a>
+            <a
+              href="https://x.com/AreebaSadiq80"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center relative w-10 h-10 md:w-12 md:h-12 bg-gray-800 text-white rounded-full transition duration-300 hover:scale-105 overflow-hidden"
+            >
+              <div className="absolute inset-0 border-2 border-teal-600 rounded-full animate-pulse"></div>
+              <FaXTwitter className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
 
           </div>

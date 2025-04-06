@@ -1,4 +1,5 @@
 import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaGithub
-              size={36}
+              size={32}
               className="hover:text-white transition duration-300"
             />
           </a>
@@ -28,7 +29,7 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaDiscord
-              size={40}
+              size={35}
               className="hover:text-white transition duration-300"
             />
           </a>
@@ -38,7 +39,17 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedin
-              size={40}
+              size={30}
+              className="hover:text-white transition duration-300"
+            />
+          </a>
+          <a
+            href="https://x.com/AreebaSadiq80"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter
+              size={30}
               className="hover:text-white transition duration-300"
             />
           </a>

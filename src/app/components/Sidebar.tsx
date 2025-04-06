@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaGithub, FaDiscord } from "react-icons/fa";
 import { FiAlignRight, FiX } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 
 const Sidebar: React.FC = () => {
@@ -120,6 +121,14 @@ const Sidebar: React.FC = () => {
             >
               <FaLinkedin />
             </a>
+            <a
+              href="https://x.com/AreebaSadiq80"
+              target="_blank"
+              className="text-gray-300 hover:text-cyan-800 transition-all duration-300"
+            >
+              <FaXTwitter />
+            </a>
+
           </div>
         </div>
       </div>
