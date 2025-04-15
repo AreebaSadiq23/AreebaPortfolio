@@ -1,5 +1,4 @@
 import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -43,17 +42,6 @@ const Footer: React.FC = () => {
               className="hover:text-white transition duration-300"
             />
           </a>
-          <a
-            href="https://x.com/AreebaSadiq80"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaXTwitter
-              size={30}
-              className="hover:text-white transition duration-300"
-            />
-          </a>
-
         </div>
       </div>
     </footer>
