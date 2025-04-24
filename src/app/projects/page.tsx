@@ -67,23 +67,23 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/AreebaSadiq23/Education-website.git",
     liveUrl: "https://education-website-one.vercel.app/",
   },
+  // {
+  //   id: 5,
+  //   name: "Cake-Heaven Website",
+  //   description:
+  //      "This is an Cake Heaven-website built using Next.js and CSS. It is a responsive web application that looks great on all devices.",
+  //   language: "Nextjs and CSS",
+  //   image: "/project3.png",
+  //   githubUrl: "https://github.com/AreebaSadiq23/Cake-Haven-web",
+  //   liveUrl: "https://cake-haven-web.vercel.app/",
+  // },
   {
     id: 5,
-    name: "Cake-Heaven Website",
-    description:
-       "This is an Cake Heaven-website built using Next.js and CSS. It is a responsive web application that looks great on all devices.",
-    language: "Nextjs and CSS",
-    image: "/project3.png",
-    githubUrl: "https://github.com/AreebaSadiq23/Cake-Haven-web",
-    liveUrl: "https://cake-haven-web.vercel.app/",
-  },
-  {
-    id: 6,
     name: "Flower-Website",
     description: 
     "This is a Flower Website using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
     language: "Nextjs and Tailwind CSS",
-    image: "/project5.Jpg",
+    image: "/project5.jpg",
     githubUrl: "https://github.com/AreebaSadiq23/Flower_Shop_Website",
     liveUrl: "https://flower-shop-website-ykeb.vercel.app/",
   },
