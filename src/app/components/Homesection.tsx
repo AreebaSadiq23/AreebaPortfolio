@@ -79,7 +79,7 @@ const HomeSection: React.FC = () => {
               <FaDiscord className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
             <a
-              href="www.linkedin.com/in/areeba-sadiq-934a09351"
+              href="https://www.linkedin.com/in/areeba-sadiq-934a09351"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center relative w-10 h-10 md:w-12 md:h-12 bg-gray-800 text-white rounded-full transition duration-300 hover:scale-105 overflow-hidden"
