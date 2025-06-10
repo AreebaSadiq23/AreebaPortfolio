@@ -54,7 +54,7 @@ export default function ServicesSection() {
             <h2 className="text-3xl font-bold">My Services</h2>
           </div>
           <button className="group cursor-pointer relative cursor-default w-[120px] h-[60px] bg-[linear-gradient(144deg,_#af40ff,_#5b42f3_50%,_#00ddeb)] text-white whitespace-nowrap flex flex-wrap rounded-lg overflow-hidden">
-            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">Explore More</span>
+            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">Services</span>
             <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.5s]"></div>
             <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2s]"></div>
             <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.5s]"></div>
@@ -132,7 +132,7 @@ export default function ServicesSection() {
 
         {/* Subheading */}
         <p className="text-gray-300 text-sm sm:text-base mb-6 max-w-2xl">
-          I offer a wide range of design and development<br/> services to bring your vision to life.
+          I offer a wide range of design and development<br /> services to bring your vision to life.
         </p>
 
         {/* Fancy Tabs */}
@@ -141,11 +141,10 @@ export default function ServicesSection() {
             <button
               key={service}
               onClick={() => setActiveService(service as keyof Services)}
-              className={`relative cursor-pointer py-2.5 px-6 text-center font-barlow text-sm uppercase rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 overflow-hidden ${
-                activeService === service
+              className={`relative cursor-pointer py-2.5 px-6 text-center font-barlow text-sm uppercase rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 overflow-hidden ${activeService === service
                   ? 'text-white border border-blue-400 shadow-md'
                   : 'text-gray-300 border border-gray-600 hover:text-white hover:border-blue-500'
-              }`}
+                }`}
             >
               <span className="relative z-20">{service}</span>
               <span className="absolute left-[-75%] top-0 h-full w-[50%] bg-white/10 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out" />

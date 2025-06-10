@@ -10,9 +10,8 @@ const DecorativeDots: React.FC = () => {
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className={`w-2 h-2 md:w-3 md:h-3 bg-teal-600 rounded-full animate-bounce ${
-            index % 3 === 1 ? "delay-200" : index % 3 === 2 ? "delay-400" : ""
-          }`}
+          className={`w-2 h-2 md:w-3 md:h-3 bg-teal-600 rounded-full animate-bounce ${index % 3 === 1 ? "delay-200" : index % 3 === 2 ? "delay-400" : ""
+            }`}
         />
       ))}
     </div>
@@ -25,15 +24,14 @@ const DecorativeCircles: React.FC = () => {
       {Array.from({ length: 4 }).map((_, index) => (
         <div
           key={index}
-          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
-            index === 0
+          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${index === 0
               ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
               : index === 1
-              ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
-              : index === 2
-              ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
-              : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
-          }`}
+                ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
+                : index === 2
+                  ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
+                  : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
+            }`}
         ></div>
       ))}
     </div>
@@ -92,11 +90,11 @@ const HomeSection: React.FC = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 relative z-10">
-          <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn ">
+          <div className="relative w-36 h-36 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg flex justify-center items-center animate-bounceIn">
             <Image
-              src="/img.png"
+              src="/pro.png"
               alt="Profile"
-              className="object-cover w-full h-full  transition-transform duration-500 transform hover:scale-105 lg:mr-16 "
+              className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105 translate-x-6"
               width={600}
               height={600}
             />
@@ -104,8 +102,8 @@ const HomeSection: React.FC = () => {
           </div>
           <div className="absolute inset-0 bg-cover bg-center opacity-30 animation-background"></div>
         </div>
-      </div>
 
+      </div>
       <style jsx>{`
         @keyframes spin-slow {
           0% {

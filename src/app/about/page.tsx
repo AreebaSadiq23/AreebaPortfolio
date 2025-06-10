@@ -10,9 +10,8 @@ const DecorativeDots: React.FC = () => {
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className={`w-2 h-2 md:w-3 md:h-3 bg-teal-600 rounded-full animate-bounce ${
-            index % 3 === 1 ? "delay-200" : index % 3 === 2 ? "delay-400" : ""
-          }`}
+          className={`w-2 h-2 md:w-3 md:h-3 bg-teal-600 rounded-full animate-bounce ${index % 3 === 1 ? "delay-200" : index % 3 === 2 ? "delay-400" : ""
+            }`}
         />
       ))}
     </div>
@@ -25,15 +24,14 @@ const DecorativeCircles: React.FC = () => {
       {Array.from({ length: 4 }).map((_, index) => (
         <div
           key={index}
-          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${
-            index === 0
+          className={`absolute bg-teal-600 rounded-full opacity-30 animate-float ${index === 0
               ? "w-16 h-16 md:w-32 md:h-32 animation-delay-1000"
               : index === 1
-              ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
-              : index === 2
-              ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
-              : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
-          }`}
+                ? "w-24 h-24 md:w-48 md:h-48 opacity-20 animation-delay-500"
+                : index === 2
+                  ? "w-12 h-12 md:w-24 md:h-24 opacity-40 animation-delay-1500"
+                  : "w-20 h-20 md:w-36 md:h-36 animation-delay-2000"
+            }`}
         ></div>
       ))}
     </div>
@@ -75,11 +73,11 @@ const About: React.FC = () => {
             functionality.
           </p>
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
-           With a year of hands-on experience, I have worked on various projects, 
-           enhancing my technical skills and problem-solving abilities. My expertise
-            includes building scalable and maintainable applications, focusing on 
+            With a year of hands-on experience, I have worked on various projects,
+            enhancing my technical skills and problem-solving abilities. My expertise
+            includes building scalable and maintainable applications, focusing on
             responsiveness and performance optimization.
-            </p>
+          </p>
           <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
             In addition to my web development skills, I am currently expanding
             my knowledge in Agentic AI. I am excited to explore how artificial
