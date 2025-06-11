@@ -18,7 +18,7 @@ const Sidebar: React.FC = () => {
       <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-30 flex items-center justify-between w-full max-w-screen-2xl px-4">
         <div>
           <Image
-            src="/logop.png"
+            src="/logo.png"
             alt="Logo"
             className="h-16 w-auto md:h-12"
             height={500}
