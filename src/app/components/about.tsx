@@ -55,7 +55,7 @@ const About: React.FC = () => {
       <DecorativeCircles />
       <h2
         data-aos="fade-up"
-        className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-6"
+        className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500   mb-6"
       >
         About Me
       </h2>

@@ -94,7 +94,7 @@ const HomeSection: React.FC = () => {
             <Image
               src="/pro.png"
               alt="Profile"
-              className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105 translate-x-6"
+              className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105 translate-x-3"
               width={600}
               height={600}
             />

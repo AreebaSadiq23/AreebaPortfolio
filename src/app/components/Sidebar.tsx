@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaGithub, FaDiscord } from "react-icons/fa";
 import { FiAlignRight, FiX } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
-
+import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -48,49 +48,49 @@ const Sidebar: React.FC = () => {
         {/* Navigation */}
         <ul className="text-left mt-20 space-y-8 md:space-y-6 ml-24">
           <li>
-            <a
+            <Link
               href="/"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/about"
+            <Link
+              href="/"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/service"
+            <Link
+              href="/"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/projects"
+            <Link
+              href="/"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/contact"
+            <Link
+              href="/"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         {/* Social Icons */}

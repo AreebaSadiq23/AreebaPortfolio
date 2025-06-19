@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft, FaGithub, FaLink } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -15,6 +17,7 @@ const DecorativeDots: React.FC = () => {
     </div>
   );
 };
+
 
 interface Projects {
   id: number;

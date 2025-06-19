@@ -78,7 +78,6 @@ const Contact: React.FC = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      // Here you would typically send the data to your backend
       console.log(data)
       toast.success("Message sent successfully!")
       reset()
