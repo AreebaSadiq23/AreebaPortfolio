@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
 
       <h2
         data-aos="zoom-in"
-        className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12"
+        className="text-4xl berkshire-swash-regular sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12"
       >
         Contact Now!
       </h2>
@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Location:</strong>
                 <br />
-                <span className="text-md text-cyan-500 font-mono">Karachi, Pakistan</span>
+                <span className="text-md text-cyan-500 dancing-script">Karachi, Pakistan</span>
               </span>
             </p>
             <p className="mb-6 flex items-center" data-aos="zoom-in">
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
               <span>
                 <strong>Email:</strong>
                 <br />
-                <span className="text-md text-cyan-500 font-mono">areebasadiq41@gmail.com</span>
+                <span className="text-md text-cyan-500 dancing-script">areebasadiq41@gmail.com</span>
               </span>
             </p>
           </div>
@@ -142,10 +142,10 @@ const Contact: React.FC = () => {
           className="contact-form flex-1 bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg mx-auto w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-auto lg:h-[600px] xl:h-[700px]"
           data-aos="zoom-in"
         >
-          <h1 className="text-base sm:text-3xl md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2">
+          <h1 className="text-base sm:text-3xl md:text-5xl font-mono mb-4 text-teal-600 text-center mt-2 berkshire-swash-regular">
             Let&apos;s work together
           </h1>
-          <h2 className="text-sm sm:text-lg mb-4 text-gray-400 text-center">
+          <h2 className="text-sm sm:text-lg mb-4 text-gray-400 text-center dancing-script">
             Get in touch with us so we can work together to create something incredible!
           </h2>
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                       message: "First name must be at least 2 characters",
                     },
                   })}
-                  className={`w-full lg:mt-6 text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                  className={`w-full lg:mt-6 text-white dancing-script border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                     errors.firstName ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -179,7 +179,7 @@ const Contact: React.FC = () => {
                       message: "Last name must be at least 2 characters",
                     },
                   })}
-                  className={`w-full lg:mt-6 text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                  className={`w-full lg:mt-6 text-white dancing-script border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                     errors.lastName ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -200,7 +200,7 @@ const Contact: React.FC = () => {
                       message: "Invalid email address",
                     },
                   })}
-                  className={`w-full lg:mt-6 text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                  className={`w-full lg:mt-6 text-white dancing-script border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -217,7 +217,7 @@ const Contact: React.FC = () => {
                       message: "Please enter a valid phone number",
                     },
                   })}
-                  className={`w-full lg:mt-6 text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                  className={`w-full lg:mt-6 dancing-script text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                     errors.phone ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -231,7 +231,7 @@ const Contact: React.FC = () => {
                 {...register("service", {
                   required: "Please select a service",
                 })}
-                className={`w-full lg:mt-6 border rounded p-3 bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 hover:border-teal-500 hover:shadow-lg ${
+                className={`w-full lg:mt-6 border dancing-script rounded p-3 bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 hover:border-teal-500 hover:shadow-lg ${
                   errors.service ? "border-red-500" : "border-gray-300"
                 }`}
               >
@@ -260,7 +260,7 @@ const Contact: React.FC = () => {
                   },
                 })}
                 rows={4}
-                className={`w-full lg:mt-6 text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                className={`w-full lg:mt-6 text-white dancing-script border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                   errors.message ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -270,7 +270,7 @@ const Contact: React.FC = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-[200px] bg-cyan-700 text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center hover:bg-cyan-500 transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-[200px] bg-cyan-700 berkshire-swash-regular text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center hover:bg-cyan-500 transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <AiOutlineArrowUp size={20} className="mr-2" />
               <span>Send Message</span>

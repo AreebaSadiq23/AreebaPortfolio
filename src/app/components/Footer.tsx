@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-800 text-gray-400 py-6 sm:py-8 max-w-screen-2xl mx-auto">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <h2 className="text-lg font-bold text-white">Areeba Sadiq</h2>
-          <p className="text-sm">© {currentYear} All Rights Reserved</p>
+          <h2 className="text-lg font-bold text-white berkshire-swash-regular">Areeba Sadiq</h2>
+          <p className="text-sm dancing-script">© {currentYear} All Rights Reserved</p>
         </div>
 
         <div className="flex space-x-4 justify-center md:justify-end">

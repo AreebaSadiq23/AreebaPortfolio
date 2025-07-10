@@ -107,7 +107,7 @@ const Projects: React.FC = () => {
 
   return (
     <section id="Portfolio" className="w-auto max-w-screen-2xl mx-auto py-16 px-4 bg-gray-900">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
+      <h2 className="text-4xl berkshire-swash-regular sm:text-5xl md:text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600 mb-12">
         My Projects
       </h2>
       <div className="flex flex-col md:flex-row items-center gap-8">
@@ -115,11 +115,11 @@ const Projects: React.FC = () => {
           <h3 className="text-3xl sm:text-4xl text-white md:text-9xl font-bold font-mono text-gray-500 mb-4">
             0{id}
           </h3>
-          <h4 className="text-lg md:text-4xl text-gray-100 mb-4">{name}</h4>
-          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4">
+          <h4 className="text-lg md:text-4xl text-gray-100 mb-4 berkshire-swash-regular">{name}</h4>
+          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4 berkshire-swash-regular">
             {description}
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-teal-600 font-normal mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-teal-600 font-normal mb-4 dancing-script">
             {language}
           </p>
           <div className="my-2 border-t border-gray-400 w-full"></div>

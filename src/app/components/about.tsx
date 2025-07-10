@@ -55,14 +55,14 @@ const About: React.FC = () => {
       <DecorativeCircles />
       <h2
         data-aos="fade-up"
-        className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500   mb-6"
+        className="text-4xl berkshire-swash-regular sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500   mb-6"
       >
         About Me
       </h2>
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-base sm:text-lg md:text-xl lg:text-xl text-center md:text-left mb-8 md:mb-0 space-y-4">
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 mt-5">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 mt-5 berkshire-swash-regular ">
             Hello! I&apos;m Areeba, I am a passionate Full Stack Developer
             with 1 year of experience in building modern web applications.I have
             a strong foundation in web technologies like HTML, CSS, JavaScript,
@@ -72,13 +72,13 @@ const About: React.FC = () => {
             finish, ensuring the best possible user experience and seamless
             functionality.
           </p>
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 berkshire-swash-regular ">
             With a year of hands-on experience, I have worked on various projects,
             enhancing my technical skills and problem-solving abilities. My expertise
             includes building scalable and maintainable applications, focusing on
             responsiveness and performance optimization.
           </p>
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 berkshire-swash-regular ">
             In addition to my web development skills, I am currently expanding
             my knowledge in Agentic AI. I am excited to explore how artificial
             intelligence can be integrated into web applications to create
@@ -87,14 +87,14 @@ const About: React.FC = () => {
             user input but anticipate and adapt to user needs, making
             applications more efficient and user-centric.
           </p>
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 berkshire-swash-regular ">
             I also work with modern tools like Figma for interactive designs and
             Sanity for flexible content management. Whether it&apos;s creating
             responsive designs or optimizing back-end performance, I am always
             focused on building applications that are scalable, maintainable,
             and user-friendly.
           </p>
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 berkshire-swash-regular">
             As I continue to explore the potential of Agentic AI, I am eager to
             incorporate AI-driven features into my projects, pushing the
             boundaries of what&apos;s possible in web development. I&apos;m always
@@ -102,7 +102,7 @@ const About: React.FC = () => {
             of the curve in this rapidly evolving field.
           </p>
 
-          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8">
+          <p data-aos="zoom-in" className="text-gray-400 mx-4 md:mx-8 berkshire-swash-regular">
             Looking for a Web Developer? Let&apos;s connect On Linkedin!
           </p>
           <DecorativeDots />
