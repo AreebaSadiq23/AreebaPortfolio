@@ -17,7 +17,6 @@ const DecorativeDots: React.FC = () => {
   );
 };
 
-
 interface Projects {
   id: number;
   name: string;
@@ -51,17 +50,7 @@ const projects: Projects[] = [
   },
   
   {
-    id: 3 ,
-    name: "RIbuild-website",
-    description:
-    "This is a Roamstay website built using HTML, CSS.It is a responsive web application that looks great on all devices.",
-    language: "HTML,CSS and JavaScript",
-    image: "/project1.jpg",
-    githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
-    liveUrl: "https://booking-web-jet.vercel.app/",
-  },
-  {
-    id: 4,
+    id: 3,
     name: "Roamstay-website",
     description:
     "This is a Roamstay website built using HTML, CSS.It is a responsive web application that looks great on all devices.",
@@ -70,16 +59,6 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
     liveUrl: "https://booking-web-jet.vercel.app/",
   },
-  // {
-  //   id: 5,
-  //   name: "Cake-Heaven Website",
-  //   description:
-  //      "This is an Cake Heaven-website built using Next.js and CSS. It is a responsive web application that looks great on all devices.",
-  //   language: "Nextjs and CSS",
-  //   image: "/project3.png",
-  //   githubUrl: "https://github.com/AreebaSadiq23/Cake-Haven-web",
-  //   liveUrl: "https://cake-haven-web.vercel.app/",
-  // },
   {
     id: 5,
     name: "Flower-Website",
@@ -173,4 +152,4 @@ const Projects: React.FC = () => {
     </section>
   );
 };
-export default Projects;
+export default Projects; 

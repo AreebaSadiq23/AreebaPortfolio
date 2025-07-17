@@ -58,7 +58,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/about"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
@@ -67,7 +67,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/service"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
@@ -76,7 +76,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/projects"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >
@@ -85,7 +85,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/contact"
               onClick={toggleSidebar}
               className="text-3xl md:text-5xl text-gray-300 transition-all duration-300 hover:text-cyan-700 block lg:mt-10"
             >

@@ -87,7 +87,7 @@ const HomeSection: React.FC = () => {
               <FaLinkedin className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
           </div>
-          <DownloadCVButton/>
+          <div className="mt-4"><DownloadCVButton/></div>
           <DecorativeDots />
         </div>
 

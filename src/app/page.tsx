@@ -1,10 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react'; 
 import HomeSection from './components/Homesection';
-import About from './components/about';
-import ServicesSection from './components/service';
-import Projects from './components/project';
-import Contact from './components/contact'; 
 import Loader from './components/loader'; 
 import Footer from './components/Footer';
 
@@ -25,10 +21,6 @@ export default function Home() {
       <div className={`flex w-full transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <div className="w-full">
           <HomeSection />
-          <About/>
-          <ServicesSection />
-          <Projects />
-          <Contact />
           <Footer />
         
         </div>

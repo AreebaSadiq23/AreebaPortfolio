@@ -8,7 +8,6 @@ import { AiOutlineMail, AiOutlineEnvironment, AiOutlineArrowUp } from "react-ico
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-// Types for our form data  
 type FormData = {
   firstName: string
   lastName: string
@@ -254,44 +253,26 @@ const Contact: React.FC = () => {
                     value: 10,
                     message: "Message must be at least 10 characters",
                   },
-                  maxLength: {
-                    value: 500,
-                    message: "Message must not exceed 500 characters",
-                  },
                 })}
-                rows={4}
-                className={`w-full lg:mt-6 text-white dancing-script border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
+                className={`w-full lg:mt-6 dancing-script text-white border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-700 placeholder-gray-400 hover:border-teal-500 hover:shadow-lg ${
                   errors.message ? "border-red-500" : "border-gray-300"
                 }`}
+                rows={5}
               />
-              {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message.message}</p>}
+              {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message}</p>}
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
-              className="w-[200px] bg-cyan-700 berkshire-swash-regular text-white py-3 px-6 rounded-lg border border-cyan-500 flex items-center justify-center hover:bg-cyan-500 transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300"
             >
-              <AiOutlineArrowUp size={20} className="mr-2" />
-              <span>Send Message</span>
+              Send Message
             </button>
           </form>
         </div>
-      </div>  
-
-      {/* CSS for Animation */}
-      <style jsx>{`
-        @keyframes borderAnimation {
-          0% {
-            border-color: #4fd1c5;
-          }
-          100% {
-            border-color: #81e6d9;
-          }
-        }
-      `}</style>
+      </div>
     </section>
   )
 }
 
-export default Contact
+export default Contact; 

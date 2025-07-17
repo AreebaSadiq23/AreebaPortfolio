@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
@@ -214,4 +214,5 @@ const About: React.FC = () => {
     </section>
   );
 };
-export default About;
+
+export default About; 
