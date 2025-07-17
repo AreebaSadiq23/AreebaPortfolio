@@ -49,9 +49,10 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/AreebaSadiq23/nextjs-blog-web.git",
     liveUrl: "https://nextjs-blog-web-theta.vercel.app/",
   },
+  
   {
-    id: 3,
-    name: "Roamstay-website",
+    id: 3 ,
+    name: "RIbuild-website",
     description:
     "This is a Roamstay website built using HTML, CSS.It is a responsive web application that looks great on all devices.",
     language: "HTML,CSS and JavaScript",
@@ -61,13 +62,13 @@ const projects: Projects[] = [
   },
   {
     id: 4,
-    name: "Education-Website",
+    name: "Roamstay-website",
     description:
-     "This is an Education-website built using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
-    language: "Nextjs and Tailwind CSS",
-    image: "/project2.png",
-    githubUrl: "https://github.com/AreebaSadiq23/Education-website.git",
-    liveUrl: "https://education-website-one.vercel.app/",
+    "This is a Roamstay website built using HTML, CSS.It is a responsive web application that looks great on all devices.",
+    language: "HTML,CSS and JavaScript",
+    image: "/project1.jpg",
+    githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
+    liveUrl: "https://booking-web-jet.vercel.app/",
   },
   // {
   //   id: 5,
@@ -172,5 +173,4 @@ const Projects: React.FC = () => {
     </section>
   );
 };
-
 export default Projects;

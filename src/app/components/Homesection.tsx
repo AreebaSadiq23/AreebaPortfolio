@@ -1,8 +1,9 @@
+import React from 'react';
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-
+import DownloadCVButton from './DownloadCVButton';
 
 const DecorativeDots: React.FC = () => {
   return (
@@ -86,6 +87,7 @@ const HomeSection: React.FC = () => {
               <FaLinkedin className="relative z-10 w-5 h-5 md:w-6 md:h-6" />
             </a>
           </div>
+          <DownloadCVButton/>
           <DecorativeDots />
         </div>
 
