@@ -4,7 +4,7 @@ import type React from "react"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"
-import { AiOutlineMail, AiOutlineEnvironment, AiOutlineArrowUp } from "react-icons/ai"
+import { AiOutlineMail, AiOutlineEnvironment } from "react-icons/ai"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
