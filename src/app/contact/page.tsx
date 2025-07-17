@@ -259,7 +259,7 @@ const Contact: React.FC = () => {
                 }`}
                 rows={5}
               />
-              {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message}</p>}
+              {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message.message}</p>}
             </div>
 
             <button
