@@ -33,41 +33,31 @@ const projects: Projects[] = [
     name: "E-Commerce-Website",
     description:
            "I have designed and developed this e-commerce website using Next.js and Tailwind CSS, ensuring a modern UI/UX with full responsiveness. The project is optimized for fast performance and a smooth user experience. It includes product listing, a search feature, a wishlist system, a cart system, and an interactive UI. Additionally, Sanity CMS is integrated for efficient and dynamic content management, making the website scalable and easy to update. This project highlights a powerful, efficient, and user-friendly approach to e-commerce solutions.",
-    language: "Next.js and Tailwind CSS",
+    language: "Next.js, Sanity, Framer Motion , Tailwind CSS",
     image: "/project4.png",
     githubUrl: "https://github.com/AreebaSadiq23/e-commerce-web-project",
     liveUrl: "https://e-commerce-web-project-one.vercel.app/",
-  },
+  }, 
   {
     id: 2,
-    name: "Blog-Website",
+    name: "Seasoned_Hip-Website",
     description:
-      "A fast and responsive blog website built with Next.js and styled using Tailwind CSS. It includes a homepage with recent blog posts, post pages, comment sections. The website provides a smooth, mobile-first user experience with modern UI elements.",
-    language: "Next.js and Tailwind CSS",
-    image: "/blog.jpeg",
-    githubUrl: "https://github.com/AreebaSadiq23/nextjs-blog-web.git",
-    liveUrl: "https://nextjs-blog-web-theta.vercel.app/",
-  },
-  
+    "Seasoned Hip is a stylish, fully responsive website built with Next.js and Tailwind CSS, delivering a sleek and modern user interface. Designed with performance and user experience in mind, the site offers clean navigation, fast loading times, and mobile-first responsiveness. The tech stack ensures scalability and maintainability, making it suitable for both brand promotion and user engagement.",
+    language: "NextJS & Tailwind CSS",
+    image: "/p3.png",
+    githubUrl: "https://github.com/AreebaSadiq23/seasoned_hip.git",
+    liveUrl: "https://seasoned-hip.vercel.app/",
+  }, 
   {
     id: 3,
-    name: "Roamstay-website",
+    name: "RIbuild-Website",
     description:
-    "This is a Roamstay website built using HTML, CSS.It is a responsive web application that looks great on all devices.",
-    language: "HTML,CSS and JavaScript",
-    image: "/project1.jpg",
-    githubUrl: "https://github.com/AreebaSadiq23/Booking-web.git",
-    liveUrl: "https://booking-web-jet.vercel.app/",
-  },
-  {
-    id: 5,
-    name: "Flower-Website",
-    description: 
-    "This is a Flower Website using Next.js and Tailwind CSS. It is a responsive web application that looks great on all devices.",
-    language: "Nextjs and Tailwind CSS",
-    image: "/project5.jpg",
-    githubUrl: "https://github.com/AreebaSadiq23/Flower_Shop_Website",
-    liveUrl: "https://flower-shop-website-ykeb.vercel.app/",
+    "This project features a clean and modern UI/UX, fully responsive across all devices. Built using Next.js for robust performance and Tailwind CSS for rapid and consistent styling, the application ensures a seamless user experience with optimized structure and design best practices.",
+      // "A fast and responsive blog website built with Next.js and styled using Tailwind CSS. It includes a homepage with recent blog posts, post pages, comment sections. The website provides a smooth, mobile-first user experience with modern UI elements.",
+    language: "Next.js, React , Typescript and Tailwind CSS",
+    image: "/p2.png",
+    githubUrl: "https://github.com/AreebaSadiq23/RIBUILD_Web.git",
+    liveUrl: "https://ribuild-web.vercel.app/",
   },
 ];
 
